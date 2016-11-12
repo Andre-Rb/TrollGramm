@@ -655,7 +655,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &428724410 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100120, guid: 96a1d7d101cfbe24e9d8f6b2ee1cfa67, type: 3}
@@ -710,10 +710,6 @@ Prefab:
     - target: {fileID: 4000013314273718, guid: b2773b6f325ac674abec0b747123402b, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013314273718, guid: b2773b6f325ac674abec0b747123402b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2773b6f325ac674abec0b747123402b, type: 2}
@@ -2001,7 +1997,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400274, guid: 96a1d7d101cfbe24e9d8f6b2ee1cfa67, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96a1d7d101cfbe24e9d8f6b2ee1cfa67, type: 3}

@@ -4,7 +4,7 @@ public class Player : MonoBehaviour
 {
     public float speed = 8.0f;
     public float height = 10.0f;
-    public float speedRotate = 100.0f;
+    public float speedRotate = 200.0f;
     Rigidbody rb;
     public bool Alive { get; set; }
 
@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+		Mouse ();
         Jump();
     }
 
@@ -28,11 +29,9 @@ public class Player : MonoBehaviour
         {
 
             float moveV = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-            float rotateH = Input.GetAxis("Horizontal") * speedRotate * Time.deltaTime;
+			float moveH = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 
-            transform.Translate(new Vector3(0, 0, moveV));
-
-            transform.Rotate(new Vector3(0, rotateH, 0));
+			transform.Translate(new Vector3(moveH, 0, moveV));
         }
     }
 
@@ -47,5 +46,13 @@ public class Player : MonoBehaviour
         }
     }
 
+	void Mouse()
+	{
+		if(Alive)
+		{
+			float mouseX = Input.GetAxis ("Mouse X") * speedRotate * Time.deltaTime;
 
+			transform.rotation *= Quaternion.Euler (0, mouseX, 0);
+		}
+	}
 }
