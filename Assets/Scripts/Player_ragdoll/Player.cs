@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+
+
+enum AnimationParams
+{
+    TrgIdle,
+    Velocity,
+    TrgWalking
+}
 
 public class Player : MonoBehaviour
 {
@@ -10,12 +19,21 @@ public class Player : MonoBehaviour
     public bool Alive { get; set; }
     public bool isFPSMode;
 
+    Animator animator;
+    private Rigidbody rdb;
+    public float maxVelocity;
+    bool isIdle;
+
 
     void Awake()
+
     {
         Alive = true;
+        animator = GetComponent<Animator>();
 
-        rb = GetComponent<Rigidbody>();
+
+        rdb = GetComponent<Rigidbody>();
+
     }
 
     void FixedUpdate()
@@ -23,24 +41,54 @@ public class Player : MonoBehaviour
         Move();
         Mouse();
         Jump();
+
+        //if (Math.Abs(rdb.velocity.x) > 0.1)
+        //Debug.Log(rdb.velocity.x);
+
     }
 
     void Move()
     {
         if (Alive)
         {
+            //TODO Slower on backsteps
 
-            float moveV = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-			float moveH = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+            //Moving on axis
+            float axisV = Input.GetAxis("Vertical");
 
-            //transform.Translate(new Vector3(0, 0, moveV));
-            GetComponent<Rigidbody>().MovePosition(transform.position + transform.forward * moveV / 1.5f);
-            //GetComponent<Rigidbody>().AddForce(transform.forward * moveV * 1000);
+            if (rdb.velocity.sqrMagnitude <= maxVelocity)
+            {
+                float moveV = axisV * speed * Time.deltaTime;
+
+                rdb.AddForce(transform.forward * moveV * 10000);
+                GetComponent<Rigidbody>().MovePosition(transform.position + transform.forward * moveV / 1.5f);
+
+            }
 
 
-			transform.Translate(new Vector3(moveH, 0, moveV));
-            //GetComponent<Rigidbody>().MovePosition(transform.position + transform.forward * moveV);
-           // GetComponent<Rigidbody>().AddForce(transform.forward * moveV);
+            if (Math.Abs(axisV) < 0.01f)
+            {
+                rdb.velocity = new Vector3(0, rdb.velocity.y, 0);
+
+            }
+            Vector3 localVelocity = transform.InverseTransformDirection(rdb.velocity);
+            float forwardSpeed = localVelocity.z;
+            if (Math.Abs(forwardSpeed) < 0.1f)
+                rotationSpeed = 200;
+            else
+            {
+                rotationSpeed = 50;
+            }
+            float rotateH = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
+
+            transform.Rotate(new Vector3(0, rotateH, 0));
+
+
+
+            Debug.Log(forwardSpeed);
+
+            animator.SetFloat(AnimationParams.Velocity.ToString(), forwardSpeed);
+
 
         }
     }
@@ -51,14 +99,14 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-				rb.velocity = new Vector3(0, JumpHeight, 0);
+                rb.velocity = new Vector3(0, JumpHeight, 0);
             }
         }
     }
 
     void Mouse()
     {
-        if (Alive)
+        if (Alive && isFPSMode)
         {
             float mouseX = -Input.GetAxis("Mouse X") * rotationSpeed;
 
