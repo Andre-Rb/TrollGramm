@@ -8,8 +8,9 @@ public class Switch2 : MonoBehaviour
 		if(other.gameObject.tag == "Player")
 		{
 			Renderer rend = GetComponent<Renderer>();
-			rend.material.shader = Shader.Find("Albedo");
-			rend.material.SetColor("_SpecColor", Color.red);
+			rend.material.color = Color.red;
+
+			transform.position = new Vector3 (transform.position.x, -12.79f, transform.position.z);
 		}
 	}
 }
