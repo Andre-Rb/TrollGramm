@@ -20,10 +20,10 @@ public class Player : MonoBehaviour
 
 	void Move()
 	{
-		float moveH = Input.GetAxis ("Vertical") * speed * Time.deltaTime;
+		float moveV = Input.GetAxis ("Vertical") * speed * Time.deltaTime;
 		float rotateH = Input.GetAxis ("Horizontal") * speedRotate * Time.deltaTime;
 
-		transform.Translate (new Vector3 (0, 0, moveH));
+		transform.Translate (new Vector3 (0, 0, moveV));
 
 		transform.Rotate (new Vector3 (0, rotateH, 0));
 	}
