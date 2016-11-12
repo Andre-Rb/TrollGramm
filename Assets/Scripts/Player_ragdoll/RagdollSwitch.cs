@@ -76,7 +76,9 @@ public class RagdollSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             Kill();
+            spinningRoutine = Spinning(20000f);
 
+            StartCoroutine(spinningRoutine);
         }
 
     }
@@ -103,20 +105,22 @@ public class RagdollSwitch : MonoBehaviour
             rigibodyToPropulseAtDeath.AddForce(Vector3.up * killingJummpForce);
 
 
-            spinningRoutine = Spinning(killingJummpForce);
 
-            StartCoroutine(spinningRoutine);
 
         }
     }
 
     IEnumerator Spinning(float force)
     {
+        Debug.Log(rigibodyToPropulseAtDeath.maxAngularVelocity);
+        rigibodyToPropulseAtDeath.maxAngularVelocity = 200;
+        Debug.Log(rigibodyToPropulseAtDeath.maxAngularVelocity);
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 5; i++)
         {
 
-            rigibodyToPropulseAtDeath.AddTorque(Vector3.up * force * 105154465464654);
+            rigibodyToPropulseAtDeath.AddTorque(Vector3.right * force);
+            rigibodyToPropulseAtDeath.AddTorque(Vector3.up * force);
             yield return new WaitForSeconds(0.1f);
         }
     }
