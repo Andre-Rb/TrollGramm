@@ -16,15 +16,16 @@ public class Player : MonoBehaviour
 	{
 		Move ();
 		Jump ();
-		Rotataion ();
 	}
 
 	void Move()
 	{
-		float moveH = Input.GetAxis ("Horizontal") * speed * Time.deltaTime;
-		float moveV = Input.GetAxis ("Vertical") * speed * Time.deltaTime;
+		float moveH = Input.GetAxis ("Vertical") * speed * Time.deltaTime;
+		float rotateH = Input.GetAxis ("Horizontal") * speedRotate * Time.deltaTime;
 
-		transform.Translate (new Vector3 (moveH, 0, moveV));
+		transform.Translate (new Vector3 (0, 0, moveH));
+
+		transform.Rotate (new Vector3 (0, rotateH, 0));
 	}
 
 	void Jump()
@@ -33,12 +34,5 @@ public class Player : MonoBehaviour
 		{
 			rb.velocity = new Vector3 (0, height, 0);
 		}
-	}
-
-	void Rotataion()
-	{
-		float rotateH = Input.GetAxis ("Xboxleft") * -speedRotate * Time.deltaTime;
-
-		transform.Rotate (new Vector3 (0, rotateH, 0));
 	}
 }
