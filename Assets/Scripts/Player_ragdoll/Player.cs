@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public bool isFPSMode;
 
 
-    void Start()
+    void Awake()
     {
         Alive = true;
 
@@ -33,13 +33,9 @@ public class Player : MonoBehaviour
             float moveV = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 			float moveH = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 
-
-            float rotateH = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
-
             //transform.Translate(new Vector3(0, 0, moveV));
             GetComponent<Rigidbody>().MovePosition(transform.position + transform.forward * moveV / 1.5f);
             //GetComponent<Rigidbody>().AddForce(transform.forward * moveV * 1000);
-            transform.Rotate(new Vector3(0, rotateH, 0));
 
 
 			transform.Translate(new Vector3(moveH, 0, moveV));
@@ -64,7 +60,7 @@ public class Player : MonoBehaviour
     {
         if (Alive)
         {
-            float mouseX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
+            float mouseX = -Input.GetAxis("Mouse X") * rotationSpeed;
 
             transform.rotation *= Quaternion.Euler(0, mouseX, 0);
         }
