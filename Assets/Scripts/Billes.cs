@@ -8,7 +8,7 @@ public class Billes : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Pacman")
 		{
-			Destroy (this.gameObject);
+
 		}
 	}
 }
