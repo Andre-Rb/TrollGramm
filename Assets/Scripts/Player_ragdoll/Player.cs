@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
         {
 
             float moveV = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+			float moveH = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+
 
             float rotateH = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
 
@@ -38,6 +40,11 @@ public class Player : MonoBehaviour
             GetComponent<Rigidbody>().MovePosition(transform.position + transform.forward * moveV / 1.5f);
             //GetComponent<Rigidbody>().AddForce(transform.forward * moveV * 1000);
             transform.Rotate(new Vector3(0, rotateH, 0));
+
+
+			transform.Translate(new Vector3(moveH, 0, moveV));
+            //GetComponent<Rigidbody>().MovePosition(transform.position + transform.forward * moveV);
+           // GetComponent<Rigidbody>().AddForce(transform.forward * moveV);
 
         }
     }
@@ -48,14 +55,14 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                rb.velocity = new Vector3(0, JumpHeight, 0);
+				rb.velocity = new Vector3(0, JumpHeight, 0);
             }
         }
     }
 
     void Mouse()
     {
-        if (Alive && isFPSMode)
+        if (Alive)
         {
             float mouseX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
 

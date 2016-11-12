@@ -16,7 +16,7 @@ public class RagdollSwitch : MonoBehaviour
     private List<Collider> _colliders;
     private List<CharacterJoint> _characterJoints;
     private List<GameObject> gmObjectsWithRB;
-    private IEnumerator killingCoroutine;
+    private IEnumerator spinningRoutine;
 
 
     void Start()
@@ -75,8 +75,8 @@ public class RagdollSwitch : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            killingCoroutine = Kill();
-            StartCoroutine(killingCoroutine);
+            Kill();
+
         }
 
     }
@@ -87,40 +87,39 @@ public class RagdollSwitch : MonoBehaviour
     /// <summary>
     /// Permet de killer avec la touche K
     /// </summary>
-    IEnumerator Kill(float killingJummpForce = 20000)
+    void Kill(float killingJummpForce = 2000)
     {
         if (Application.isEditor)
         {
-            //Todo impulsion vers le haut
             Rigidbody gameObjectRB = GetComponent<Rigidbody>();
 
-            if (rigibodyToPropulseAtDeath == null)
-            {
-                rigibodyToPropulseAtDeath = gameObjectRB;
-            }
-
-            gameObjectRB.AddForce(Vector3.up * killingJummpForce / 2);
-            gameObjectRB.AddTorque(Vector3.left * 30000);
-
-            yield return new WaitForSeconds(0.5f);
             SetAllRagDollColliders(true);
             MakeRBsNotPhysic(false);
             GetComponent<Animator>().enabled = false;
             GetComponent<Collider>().enabled = false;
             Destroy(gameObjectRB);
-
+            GetComponent<Player>().Alive = false;
+            Debug.Log("killed the character with kill method");
             rigibodyToPropulseAtDeath.AddForce(Vector3.up * killingJummpForce);
 
 
-            Debug.Log("killed the character with kill method");
-            DebugPrintCollidersAndJoints();
-            GetComponent<Player>().Alive = false;
-            //Debug.Break();
+            spinningRoutine = Spinning(killingJummpForce);
+
+            StartCoroutine(spinningRoutine);
 
         }
     }
 
+    IEnumerator Spinning(float force)
+    {
 
+        for (int i = 0; i < 10; i++)
+        {
+
+            rigibodyToPropulseAtDeath.AddTorque(Vector3.up * force * 105154465464654);
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
 
 
 }
