@@ -5,7 +5,10 @@ public class Player_Manette_Clavier : MonoBehaviour
     public new GameObject camera = null;
     public float Speed = 8.0f;
     public float RotationSpeed = 50.0f;
+
     public float JumpHeight = 4.0f;
+    public GameObject HeadGameObject;
+    public bool showHead;
 
     private bool isGrounded = false;
 
@@ -13,12 +16,18 @@ public class Player_Manette_Clavier : MonoBehaviour
 
     private Animator _animator;
 
+
+
     Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
+        if (showHead)
+        {
+           //TODO
+        }
 
     }
 
