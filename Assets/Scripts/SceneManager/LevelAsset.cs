@@ -27,9 +27,9 @@ public class LevelAsset : MonoBehaviour
 
         }
 
-        foreach (KeyValuePair<int, Dialogue> sortedListRdnDialogue in SortedListRdnDialogues)
-        {
-            Debug.Log("Key : " + sortedListRdnDialogue.Key + "  -  Value : " + sortedListRdnDialogue.Value);
-        }
+        //foreach (KeyValuePair<int, Dialogue> sortedListRdnDialogue in SortedListRdnDialogues)
+        //{
+        //    Debug.Log("Key : " + sortedListRdnDialogue.Key + "  -  Value : " + sortedListRdnDialogue.Value);
+        //}
     }
 }
