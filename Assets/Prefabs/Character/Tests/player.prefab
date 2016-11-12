@@ -234,7 +234,11 @@ MonoBehaviour:
   RotationSpeed: 50
   JumpHeight: 4
   HeadGameObject: {fileID: 0}
+<<<<<<< HEAD
   showHead: 1
+=======
+  showHead: 0
+>>>>>>> 9c39ee60af33483517980c4c4b9ddaa34ded5ca3
 --- !u!136 &136000012302229080
 CapsuleCollider:
   m_ObjectHideFlags: 1

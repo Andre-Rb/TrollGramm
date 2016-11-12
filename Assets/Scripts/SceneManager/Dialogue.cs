@@ -1,37 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Dialogue
+public class Dialogue : ScriptableObject
 {
 
-    string lineText;
-    AudioClip lineclip;
-
-    public string LineText
-    {
-        get
-        {
-            return lineText;
-        }
-
-        set
-        {
-            lineText = value;
-        }
-    }
-
-    public AudioClip Lineclip
-    {
-        get
-        {
-            return lineclip;
-        }
-
-        set
-        {
-            lineclip = value;
-        }
-    }
+    public string lineText;
+    public AudioClip lineclip;
 
 
 
