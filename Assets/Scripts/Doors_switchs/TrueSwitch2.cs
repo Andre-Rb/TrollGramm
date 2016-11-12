@@ -9,8 +9,6 @@ public class TrueSwitch2 : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			Debug.Log ("PASTEQUE");
-
 			exit = true;
 		}
 	}
