@@ -50,7 +50,17 @@ public class Player_Manette_Clavier : MonoBehaviour
         float rotH = Input.GetAxis("XboxleftX") * RotationSpeed * Time.deltaTime;
         float rotV = Input.GetAxis("XboxleftY") * RotationSpeed * Time.deltaTime;
 
-        transform.rotation *= Quaternion.Euler(0, rotV, 0);
+        if (rotV != 0)
+        {
+            transform.rotation *= Quaternion.Euler(0, rotV, 0);
+            _animator.SetBool(CharacterAnimatorState.isShuffling.ToString(), true);
+
+        }
+        else
+        {
+            _animator.SetBool(CharacterAnimatorState.isShuffling.ToString(), false);
+
+        }
 
 
         Quaternion nextRotation = camera.transform.rotation * Quaternion.Euler(rotH, 0, 0);
@@ -124,7 +134,8 @@ enum CharacterAnimatorState
     XWalking,
     YWalking,
     ForwardJump,
-    isGrounded
+    isGrounded,
+    isShuffling
 }
 
 enum Tags
