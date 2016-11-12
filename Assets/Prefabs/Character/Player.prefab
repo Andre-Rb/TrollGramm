@@ -906,11 +906,7 @@ GameObject:
   - 114: {fileID: 114000012219224754}
   m_Layer: 0
   m_Name: Player
-<<<<<<< HEAD
   m_TagString: Player
-=======
-  m_TagString: Untagged
->>>>>>> 9c39ee60af33483517980c4c4b9ddaa34ded5ca3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

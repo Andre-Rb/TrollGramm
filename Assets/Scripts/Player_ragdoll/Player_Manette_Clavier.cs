@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Player_Manette_Clavier : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class Player_Manette_Clavier : MonoBehaviour
         _animator = GetComponent<Animator>();
         if (showHead)
         {
-           //TODO
+            //TODO
         }
 
     }
@@ -48,9 +49,14 @@ public class Player_Manette_Clavier : MonoBehaviour
         transform.Translate(new Vector3(moveH, 0, moveV));
 
 
-        _animator.SetBool(CharacterAnimatorState.isWalkingStraight.ToString(), moveV > 0);
-        _animator.SetBool(CharacterAnimatorState.isWalkingStraightBack.ToString(), moveV < 0);
+        _animator.SetBool(CharacterAnimatorState.isMoving.ToString(), (Math.Abs(moveV) + Math.Abs(moveH)) > 0);
+
+
+        _animator.SetBool(CharacterAnimatorState.isWalkingStraight.ToString(), Input.GetAxis("Vertical") > 0);
+        _animator.SetBool(CharacterAnimatorState.isStraffing.ToString(), Math.Abs(Input.GetAxis("Horizontal")) > 0);
+
         _animator.SetFloat(CharacterAnimatorState.XWalking.ToString(), Input.GetAxis("Vertical"));
+        _animator.SetFloat(CharacterAnimatorState.YWalking.ToString(), Input.GetAxis("Horizontal"));
 
     }
 
@@ -138,13 +144,15 @@ public class Player_Manette_Clavier : MonoBehaviour
 
 enum CharacterAnimatorState
 {
-    isWalkingStraight,
-    isWalkingStraightBack,
+
     XWalking,
     YWalking,
     ForwardJump,
     isGrounded,
-    isShuffling
+    isShuffling,
+    isWalkingStraight,
+    isStraffing,
+    isMoving
 }
 
 enum Tags
