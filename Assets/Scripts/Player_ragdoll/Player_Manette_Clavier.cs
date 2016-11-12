@@ -24,10 +24,10 @@ public class Player_Manette_Clavier : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
-        if (showHead)
+       /* if (showHead)
         {
            //TODO
-        }
+        }*/
 
     }
 

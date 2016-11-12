@@ -15,7 +15,6 @@ public class Score : MonoBehaviour
 
 		if(score == scoreMax)
 		{
-			//Instantiate (door, transform.position, Quaternion.Euler);
 			Destroy (this.gameObject);
 		}
 	}
