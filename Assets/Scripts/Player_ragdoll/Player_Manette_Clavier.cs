@@ -25,10 +25,7 @@ public class Player_Manette_Clavier : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
-        if (showHead)
-        {
-            //TODO
-        }
+        rb.maxDepenetrationVelocity = 20f;
 
     }
 
@@ -43,20 +40,24 @@ public class Player_Manette_Clavier : MonoBehaviour
 
     void Move()
     {
-        float moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
-        float moveV = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
+        if (isGrounded)
+        {
+            float moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
+            float moveV = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
 
-        transform.Translate(new Vector3(moveH, 0, moveV));
+            //transform.Translate(new Vector3(moveH, 0, moveV));
+            rb.AddForce(transform.right * moveH * 4000);
+            rb.AddForce(transform.forward * moveV * 4000);
+
+            _animator.SetBool(CharacterAnimatorState.isMoving.ToString(), (Math.Abs(moveV) + Math.Abs(moveH)) > 0);
 
 
-        _animator.SetBool(CharacterAnimatorState.isMoving.ToString(), (Math.Abs(moveV) + Math.Abs(moveH)) > 0);
+            _animator.SetBool(CharacterAnimatorState.isWalkingStraight.ToString(), Input.GetAxis("Vertical") > 0);
+            _animator.SetBool(CharacterAnimatorState.isStraffing.ToString(), Math.Abs(Input.GetAxis("Horizontal")) > 0);
 
-
-        _animator.SetBool(CharacterAnimatorState.isWalkingStraight.ToString(), Input.GetAxis("Vertical") > 0);
-        _animator.SetBool(CharacterAnimatorState.isStraffing.ToString(), Math.Abs(Input.GetAxis("Horizontal")) > 0);
-
-        _animator.SetFloat(CharacterAnimatorState.XWalking.ToString(), Input.GetAxis("Vertical"));
-        _animator.SetFloat(CharacterAnimatorState.YWalking.ToString(), Input.GetAxis("Horizontal"));
+            _animator.SetFloat(CharacterAnimatorState.XWalking.ToString(), Input.GetAxis("Vertical"));
+            _animator.SetFloat(CharacterAnimatorState.YWalking.ToString(), Input.GetAxis("Horizontal"));
+        }
 
     }
 
@@ -88,15 +89,13 @@ public class Player_Manette_Clavier : MonoBehaviour
     {
         float jump = Input.GetAxis("Jump") * JumpHeight * Time.deltaTime;
 
-        if (isGrounded)
+        if (isGrounded && jump > 0)
         {
 
-            rb.velocity = new Vector3(0, jump, 0);
-            if (jump > 0 && isGrounded)
-            {
+            rb.AddForce(0, jump * 500, 0);
 
-                _animator.SetTrigger(CharacterAnimatorState.ForwardJump.ToString());
-            }
+            _animator.SetTrigger(CharacterAnimatorState.ForwardJump.ToString());
+
         }
 
     }
