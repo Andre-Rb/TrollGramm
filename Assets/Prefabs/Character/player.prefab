@@ -23,7 +23,6 @@ GameObject:
   - 65: {fileID: 65000014166288182}
   - 23: {fileID: 23000011760234840}
   - 20: {fileID: 20000011919538566}
-  - 114: {fileID: 114000012291302214}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -43,8 +42,8 @@ GameObject:
   - 136: {fileID: 136000012302229080}
   - 23: {fileID: 23000010060535820}
   - 54: {fileID: 54000012285504760}
-  - 114: {fileID: 114000011721776424}
   - 81: {fileID: 81000011886431306}
+  - 114: {fileID: 114000012291588152}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -58,10 +57,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013302397974}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.81008, y: 157.81538, z: -115.75692}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 34.53, y: 0.99, z: -1.32}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_Children:
   - {fileID: 4000013815975058}
   m_Father: {fileID: 0}
@@ -219,7 +218,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013302397974}
   m_Enabled: 1
---- !u!114 &114000011721776424
+--- !u!114 &114000012291588152
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -227,26 +226,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013302397974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a61b958db389cfb40ab6d71e553e1c04, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c1b5e4c6f142b342bf1109c7ca09ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 1000011813151112}
   speed: 8
-  height: 4
-  speedRotate: 200
---- !u!114 &114000012291302214
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011813151112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89971aaa5d7fca744903760381eb3223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedRotate: 200
-  max: 0
-  min: 0
+  speedrotate: 200
+  height: 800
 --- !u!136 &136000012302229080
 CapsuleCollider:
   m_ObjectHideFlags: 1
