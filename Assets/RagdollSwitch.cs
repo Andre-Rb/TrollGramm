@@ -62,13 +62,14 @@ public class RagdollSwitch : MonoBehaviour
     {
         if (Application.isEditor)
         {
+            //Todo impulsion vers le haut
             SetAllRagDollColliders(true);
             GetComponent<Animator>().enabled = false;
             GetComponent<Collider>().enabled = false;
             Destroy(GetComponent<Rigidbody>());
             Debug.Log("killed the character with kill method");
             DebugPrintCollidersAndJoints();
-
+            GetComponent<Player>().Alive = false;
             //Debug.Break();
 
         }
