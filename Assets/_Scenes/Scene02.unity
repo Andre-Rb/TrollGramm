@@ -258,18 +258,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013314273718, guid: b2773b6f325ac674abec0b747123402b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 20000011919538566, guid: b2773b6f325ac674abec0b747123402b,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114000011721776424, guid: b2773b6f325ac674abec0b747123402b, type: 2}
-    - {fileID: 114000012291302214, guid: b2773b6f325ac674abec0b747123402b, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2773b6f325ac674abec0b747123402b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &929333584
@@ -433,31 +422,11 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 7b77f6d3ee652ef4d9d1292acf214bd9, type: 3}
---- !u!1 &1658813583 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013302397974, guid: b2773b6f325ac674abec0b747123402b,
-    type: 2}
-  m_PrefabInternal: {fileID: 712136908}
 --- !u!4 &1658813584 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013314273718, guid: b2773b6f325ac674abec0b747123402b,
     type: 2}
   m_PrefabInternal: {fileID: 712136908}
---- !u!114 &1658813585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1658813583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c1b5e4c6f142b342bf1109c7ca09ec3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 2019262942}
-  speed: 8
-  speedrotate: 200
-  height: 800
 --- !u!1 &1857145614
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,8 +490,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!1 &2019262942 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000011813151112, guid: b2773b6f325ac674abec0b747123402b,
-    type: 2}
-  m_PrefabInternal: {fileID: 712136908}
