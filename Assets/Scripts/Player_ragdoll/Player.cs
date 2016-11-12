@@ -18,11 +18,15 @@ public class Player : MonoBehaviour
     Rigidbody rb;
     public bool Alive { get; set; }
     public bool isFPSMode;
+
     Animator animator;
     private Rigidbody rdb;
     public float maxVelocity;
     bool isIdle;
-    void Start()
+
+
+    void Awake()
+
     {
         Alive = true;
         animator = GetComponent<Animator>();
@@ -48,7 +52,6 @@ public class Player : MonoBehaviour
         if (Alive)
         {
 
-            //float moveH = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 
             //Moving on axis
             float axisV = Input.GetAxis("Vertical");
@@ -58,8 +61,10 @@ public class Player : MonoBehaviour
                 float moveV = axisV * speed * Time.deltaTime;
 
                 rdb.AddForce(transform.forward * moveV * 10000);
+                GetComponent<Rigidbody>().MovePosition(transform.position + transform.forward * moveV / 1.5f);
 
             }
+
 
             if (Math.Abs(axisV) < 0.01f)
             {
@@ -103,7 +108,7 @@ public class Player : MonoBehaviour
     {
         if (Alive && isFPSMode)
         {
-            float mouseX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
+            float mouseX = -Input.GetAxis("Mouse X") * rotationSpeed;
 
             transform.rotation *= Quaternion.Euler(0, mouseX, 0);
         }

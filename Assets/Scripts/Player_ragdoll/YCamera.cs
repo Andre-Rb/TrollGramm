@@ -15,6 +15,6 @@ public class YCamera : MonoBehaviour
 	void Mouse()
 	{
 		float mouseY = -Input.GetAxis ("Mouse Y");
-		transform.rotation *= Quaternion.Euler (mouseY, 0,	0);
+		transform.rotation *= Quaternion.Euler (mouseY*speedRotate, 0,	0);
 	}
 }
