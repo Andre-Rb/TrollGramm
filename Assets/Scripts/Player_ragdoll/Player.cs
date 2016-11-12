@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float rotationSpeed = 100.0f;
     Rigidbody rb;
     public bool Alive { get; set; }
+    public bool isFPSMode;
 
 
     void Start()
@@ -54,7 +55,7 @@ public class Player : MonoBehaviour
 
     void Mouse()
     {
-        if (Alive)
+        if (Alive && isFPSMode)
         {
             float mouseX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
 
