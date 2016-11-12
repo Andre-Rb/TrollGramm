@@ -230,9 +230,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1000011813151112}
-  speed: 8
-  speedrotate: 200
-  height: 800
+  Speed: 8
+  RotationSpeed: 50
+  JumpHeight: 4
+  HeadGameObject: {fileID: 0}
+  showHead: 0
 --- !u!136 &136000012302229080
 CapsuleCollider:
   m_ObjectHideFlags: 1

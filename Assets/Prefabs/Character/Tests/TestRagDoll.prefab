@@ -1245,8 +1245,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  height: 5
-  speedRotate: 100
+  JumpHeight: 10
+  rotationSpeed: 100
+  isFPSMode: 0
+  maxVelocity: 0
 --- !u!135 &135000012179787132
 SphereCollider:
   m_ObjectHideFlags: 1
