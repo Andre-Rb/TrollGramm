@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
             float rotateH = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
 
             //transform.Translate(new Vector3(0, 0, moveV));
-            GetComponent<Rigidbody>().MovePosition(transform.position + transform.forward * moveV / 2);
+            GetComponent<Rigidbody>().MovePosition(transform.position + transform.forward * moveV / 1.5f);
             //GetComponent<Rigidbody>().AddForce(transform.forward * moveV * 1000);
             transform.Rotate(new Vector3(0, rotateH, 0));
 
