@@ -10,6 +10,7 @@ public class Switch : MonoBehaviour
 		if(other.gameObject.tag == "Player")
 		{
 			bouton = true;
+			transform.position = new Vector3 (transform.position.x, 0.184f, transform.position.z);
 		}
 	}
 }
