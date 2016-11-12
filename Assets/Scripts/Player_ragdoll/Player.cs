@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
     {
         if (Alive)
         {
-
+            //TODO Slower on backsteps
 
             //Moving on axis
             float axisV = Input.GetAxis("Vertical");
