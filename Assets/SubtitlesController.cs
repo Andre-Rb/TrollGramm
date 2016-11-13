@@ -8,5 +8,10 @@ public class SubtitlesController : MonoBehaviour
     public Text textComponent;
 
 
+    public void SetActive(bool b)
+    {
+        gameObject.SetActive(b);
+
+    }
 
 }
