@@ -15,7 +15,8 @@ public class Score : MonoBehaviour
 
 		if(score == scoreMax)
 		{
-			Destroy (this.gameObject);
+			door.gameObject.SetActive (true);
+			Destroy (gameObject);
 		}
 	}
 }
