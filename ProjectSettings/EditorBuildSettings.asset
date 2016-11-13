@@ -10,10 +10,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Scene02.unity
   - enabled: 1
+    path: Assets/_Scenes/Scene04.unity
+  - enabled: 1
     path: Assets/_Scenes/Scene05.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scene03.unity
   - enabled: 1
     path: Assets/_Scenes/Game Over.unity
   - enabled: 1
     path: Assets/_Scenes/DrenghelScene.unity
-  - enabled: 1
-    path: Assets/_Scenes/Scene03.unity

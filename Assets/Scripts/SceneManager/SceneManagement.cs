@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 public class SceneManagement : MonoBehaviour 
 {
 	static SceneManagement instance = null;
+	IndexLevel index;
 
-	public string scene = "";
 	public bool openDoor = false;
 
 	void Start()
 	{
+
+		index = FindObjectOfType<IndexLevel>();
 		if(instance != null)
 		{
 			Destroy (gameObject);
@@ -26,8 +28,20 @@ public class SceneManagement : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player") 
 		{
-			SceneManager.LoadScene (scene);
+			SceneManager.LoadScene ("Game Over");
 			openDoor = true;
 		}
 	}
+
+	void Update()
+	{
+		int levelActuel = 0;
+
+		/*if(levelActuel != index && index != 5)
+		{
+			levelActuel = index;
+		}*/
+	}
+
+
 }
