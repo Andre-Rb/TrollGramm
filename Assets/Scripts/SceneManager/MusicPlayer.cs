@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MusicPlayer : MonoBehaviour
 {
-	static MusicPlayer instance = null;
+	static MusicPlayer instance;
 	void Start () 
 	{
 		if(instance != null)
@@ -13,7 +13,7 @@ public class MusicPlayer : MonoBehaviour
 		else
 		{
 			instance = this;
-			GameObject.DontDestroyOnLoad (gameObject);
+			DontDestroyOnLoad (gameObject);
 		}
 	}
 }
