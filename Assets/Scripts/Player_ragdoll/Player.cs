@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
 
     public float JumpHeight = 10.0f;
     public float rotationSpeed = 100.0f;
-    Rigidbody rb;
     public bool Alive { get; set; }
     public bool isFPSMode;
 
@@ -99,7 +98,7 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                rb.velocity = new Vector3(0, JumpHeight, 0);
+                rdb.velocity = new Vector3(0, JumpHeight, 0);
             }
         }
     }
