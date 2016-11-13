@@ -33,7 +33,7 @@ public class RagdollSwitch : MonoBehaviour
 
         DebugPrintCollidersAndJoints();
 
-        Debug.Log(Application.isEditor);
+        //Debug.Log(Application.isEditor);
 
         SetAllRagDollColliders(EnableRagdollColliders);
         MakeRBsNotPhysic(true);
