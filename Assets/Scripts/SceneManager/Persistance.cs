@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MusicPlayer : MonoBehaviour
+public class Persistance : MonoBehaviour
 {
-	static MusicPlayer instance;
+	static Persistance instance;
 	void Start () 
 	{
 		if(instance != null)
