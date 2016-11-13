@@ -30,9 +30,8 @@ public class RagdollSwitch : MonoBehaviour
             gmObjectsWithRB.Add(child.gameObject);
         }
 
-        DebugPrintCollidersAndJoints();
 
-        Debug.Log(Application.isEditor);
+        //Debug.Log(Application.isEditor);
 
         SetAllRagDollColliders(EnableRagdollColliders);
         MakeRBsNotPhysic(true);

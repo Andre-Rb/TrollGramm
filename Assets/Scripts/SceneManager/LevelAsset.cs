@@ -1,35 +1,72 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class LevelAsset : MonoBehaviour
 {
-
-
+    public SubtitlesController SubtitlesController;
 
     public List<Dialogue> RandomDialoguesList;
     public List<Dialogue> EventTriggeredDialoguesList;
-    private SortedList<int, Dialogue> SortedListRdnDialogues;
+    public AudioSource PlayerAudioSource;
 
-    Dialogue GetRandomDialogue()
+    private SortedList<int, Dialogue> SortedListRdnDialogues;
+    Dialogue _currentDialogue;
+
+    private bool ableToInvokeAgain;
+    public Dialogue GetRandomDialogue()
     {
         return RandomDialoguesList[Random.Range(0, RandomDialoguesList.Count)];
     }
+    const float timeForDisappearing = 5;
 
 
     void Start()
     {
-        for (int index = 0; index < RandomDialoguesList.Count; index++)
+
+
+        _currentDialogue = RandomDialoguesList[0];
+        PlayDialogue(_currentDialogue);
+        ableToInvokeAgain = true;
+    }
+
+
+    void Update()
+    {
+        if (!CheckIfDialogueIsPlaying() && ableToInvokeAgain)
         {
-            Dialogue dialogue = RandomDialoguesList[index];
-            SortedListRdnDialogues.Add(index, dialogue);
+            ableToInvokeAgain = false;
+            Invoke("HideIfDoneSubsPanel", timeForDisappearing);
+
+        }
+    }
+
+    void HideIfDoneSubsPanel()
+    {
+        if (!CheckIfDialogueIsPlaying())
+        {
+            SubtitlesController.SetActive(false);
+            _currentDialogue = null;
+            ableToInvokeAgain = true;
 
         }
 
-        foreach (KeyValuePair<int, Dialogue> sortedListRdnDialogue in SortedListRdnDialogues)
-        {
-            Debug.Log("Key : " + sortedListRdnDialogue.Key + "  -  Value : " + sortedListRdnDialogue.Value);
-        }
+    }
+
+    private bool CheckIfDialogueIsPlaying()
+    {
+        return PlayerAudioSource.isPlaying;
+    }
+
+    void PlayDialogue(Dialogue dialogue)
+
+
+    {
+        SubtitlesController.SetActive(true);
+
+        PlayerAudioSource.clip = dialogue.lineclip;
+        PlayerAudioSource.Play();
+        SubtitlesController.speaker.text = (dialogue.speaker != "") ? dialogue.speaker : "Narrator";
+        SubtitlesController.textComponent.text = dialogue.lineText;
     }
 }

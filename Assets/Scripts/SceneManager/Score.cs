@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Score : MonoBehaviour 
 {
-	public GameObject door = null;
+	public GameObject Exit = null;
 	public int scoreMax = 50;
 
 	int score = 0;
@@ -15,8 +14,10 @@ public class Score : MonoBehaviour
 
 		if(score == scoreMax)
 		{
-			door.gameObject.SetActive (true);
-			Destroy (gameObject);
+
+			gameObject.SetActive (false);
+			Exit.SetActive (true);
+
 		}
 	}
 }

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Billes : MonoBehaviour 
 {
@@ -8,7 +7,7 @@ public class Billes : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Pacman")
 		{
-			Destroy (this.gameObject);
+
 		}
 	}
 }
