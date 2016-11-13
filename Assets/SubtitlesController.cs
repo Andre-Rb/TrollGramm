@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class SubtitlesController : MonoBehaviour
 {
-    public string speaker;
+    public Text speaker;
     public Text textComponent;
 
 

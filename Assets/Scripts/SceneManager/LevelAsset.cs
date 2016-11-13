@@ -55,7 +55,6 @@ public class LevelAsset : MonoBehaviour
 
     private bool CheckIfDialogueIsPlaying()
     {
-        Debug.Log(PlayerAudioSource.isPlaying);
         return PlayerAudioSource.isPlaying;
     }
 
@@ -67,8 +66,7 @@ public class LevelAsset : MonoBehaviour
 
         PlayerAudioSource.clip = dialogue.lineclip;
         PlayerAudioSource.Play();
-        Debug.Log("Loaded a clip from " + dialogue.name);
-        SubtitlesController.speaker = (dialogue.speaker != null) ? dialogue.speaker : "Narrator";
+        SubtitlesController.speaker.text = (dialogue.speaker != "") ? dialogue.speaker : "Narrator";
         SubtitlesController.textComponent.text = dialogue.lineText;
     }
 }

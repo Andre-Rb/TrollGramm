@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Dialogue1
   m_EditorClassIdentifier: 
   lineText: I love when a plan comes together !
-  speaker: 
+  speaker: ATeamCaptain
   lineclip: {fileID: 8300000, guid: 0474712a5ea0a304dbbe5a4f3a132087, type: 3}
