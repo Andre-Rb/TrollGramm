@@ -19,6 +19,7 @@ public class LevelAsset : MonoBehaviour
     {
         return RandomDialoguesList[Random.Range(0, RandomDialoguesList.Count)];
     }
+    const float timeForDisappearing = 5;
 
 
     void Start()
@@ -36,12 +37,12 @@ public class LevelAsset : MonoBehaviour
         if (!CheckIfDialogueIsPlaying() && ableToInvokeAgain)
         {
             ableToInvokeAgain = false;
-            Invoke("HideSubsPanel", 5);
+            Invoke("HideIfDoneSubsPanel", timeForDisappearing);
 
         }
     }
 
-    void HideSubsPanel()
+    void HideIfDoneSubsPanel()
     {
         if (!CheckIfDialogueIsPlaying())
         {
