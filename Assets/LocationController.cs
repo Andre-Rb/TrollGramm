@@ -12,10 +12,16 @@ public class LocationController : MonoBehaviour
     void Start()
     {
         SceneManager.sceneLoaded += UpdateLocation;
+        if (locationString == null)
+        {
+           
+        }
     }
 
     private void UpdateLocation(Scene arg0, LoadSceneMode loadSceneMode)
     {
         locationString = SceneManager.GetActiveScene().name;
+        Debug.Log(arg0 + " has been loaded");
+
     }
 }
