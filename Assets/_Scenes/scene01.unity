@@ -1157,6 +1157,7 @@ GameObject:
   - 223: {fileID: 1633255099}
   - 114: {fileID: 650757980}
   - 114: {fileID: 650757979}
+  - 114: {fileID: 650757981}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -1201,6 +1202,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &650757981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 650757978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1459715db9023e439d4e65252a10d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &684741252 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100048, guid: 43d92132d4dd4f04f8eb66286b0a6cc0, type: 3}
