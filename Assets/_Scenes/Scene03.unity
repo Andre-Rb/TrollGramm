@@ -449,10 +449,10 @@ RectTransform:
   - {fileID: 228504377}
   m_Father: {fileID: 1292934284}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -856, y: -412}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &228504376
 GameObject:
@@ -484,10 +484,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 162898957}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1293, y: 490}
+  m_SizeDelta: {x: 1193, y: 390}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &228504378
 MonoBehaviour:
@@ -3331,10 +3331,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 162898957}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1293, y: 490}
+  m_SizeDelta: {x: 1193, y: 390}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403742071
 MonoBehaviour:
@@ -3863,7 +3863,7 @@ Prefab:
     - target: {fileID: 224000010869631432, guid: 70097a470030a334a8775310c83f211e,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 55
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224000012967535792, guid: 70097a470030a334a8775310c83f211e,
         type: 2}
