@@ -11,5 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7296a1a9688eee449841b0c2b6b3b12f, type: 3}
   m_Name: Dialogue1
   m_EditorClassIdentifier: 
-  lineText: This is a test !
-  lineclip: {fileID: 8300000, guid: cc8ec37d3f6d5e344bea44fb9136bb02, type: 3}
+  lineText: I love when a plan comes together !
+  speaker: 
+  lineclip: {fileID: 8300000, guid: 0474712a5ea0a304dbbe5a4f3a132087, type: 3}
