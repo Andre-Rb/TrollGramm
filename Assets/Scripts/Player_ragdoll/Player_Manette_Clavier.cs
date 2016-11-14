@@ -25,10 +25,14 @@ public class Player_Manette_Clavier : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
+<<<<<<< HEAD
        /* if (showHead)
         {
            //TODO
         }*/
+=======
+        rb.maxDepenetrationVelocity = 20f;
+>>>>>>> 2c50243bbff60a78135a3e0b358dd74729330b35
 
     }
 
@@ -47,6 +51,7 @@ public class Player_Manette_Clavier : MonoBehaviour
         {
             float moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
             float moveV = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
+<<<<<<< HEAD
 
             //transform.Translate(new Vector3(moveH, 0, moveV));
             rb.AddForce(transform.right * moveH * 4000);
@@ -58,6 +63,19 @@ public class Player_Manette_Clavier : MonoBehaviour
             _animator.SetBool(CharacterAnimatorState.isWalkingStraight.ToString(), Input.GetAxis("Vertical") > 0);
             _animator.SetBool(CharacterAnimatorState.isStraffing.ToString(), Math.Abs(Input.GetAxis("Horizontal")) > 0);
 
+=======
+
+            //transform.Translate(new Vector3(moveH, 0, moveV));
+            rb.AddForce(transform.right * moveH * 4000);
+            rb.AddForce(transform.forward * moveV * 4000);
+
+            _animator.SetBool(CharacterAnimatorState.isMoving.ToString(), (Math.Abs(moveV) + Math.Abs(moveH)) > 0);
+
+
+            _animator.SetBool(CharacterAnimatorState.isWalkingStraight.ToString(), Input.GetAxis("Vertical") > 0);
+            _animator.SetBool(CharacterAnimatorState.isStraffing.ToString(), Math.Abs(Input.GetAxis("Horizontal")) > 0);
+
+>>>>>>> 2c50243bbff60a78135a3e0b358dd74729330b35
             _animator.SetFloat(CharacterAnimatorState.XWalking.ToString(), Input.GetAxis("Vertical"));
             _animator.SetFloat(CharacterAnimatorState.YWalking.ToString(), Input.GetAxis("Horizontal"));
         }

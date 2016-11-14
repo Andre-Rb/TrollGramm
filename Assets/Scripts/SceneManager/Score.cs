@@ -14,10 +14,15 @@ public class Score : MonoBehaviour
 
 		if(score == scoreMax)
 		{
+<<<<<<< HEAD
 
 			gameObject.SetActive (false);
 			Exit.SetActive (true);
 
+=======
+			gameObject.SetActive (false);
+			Exit.SetActive (true);
+>>>>>>> 2c50243bbff60a78135a3e0b358dd74729330b35
 		}
 	}
 }
