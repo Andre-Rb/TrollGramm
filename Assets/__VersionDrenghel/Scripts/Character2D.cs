@@ -3,13 +3,10 @@ using UnityEngine;
 
 public class Character2D : MonoBehaviour
 {
-	public new GameObject camera = null;
 	public float Speed = 8.0f;
 	public float RotationSpeed = 50.0f;
 
 	public float JumpHeight = 4.0f;
-	public GameObject HeadGameObject;
-	public bool showHead;
 
 	private bool isGrounded = false;
 
@@ -69,12 +66,6 @@ public class Character2D : MonoBehaviour
 			_animator.SetBool(CharacterAnimatorState.isShuffling.ToString(), false);
 
 		}
-
-
-		Quaternion nextRotation = camera.transform.rotation * Quaternion.Euler(rotH, 0, 0);
-		if (nextRotation.eulerAngles.x <= 80 || nextRotation.eulerAngles.x >= 280)
-			camera.transform.rotation = nextRotation;
-
 	}
 
 	void Jump()
