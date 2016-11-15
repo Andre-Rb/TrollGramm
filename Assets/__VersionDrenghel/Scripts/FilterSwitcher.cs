@@ -76,7 +76,7 @@ public class FilterSwitcher : MonoBehaviour
         PlayerCamera.cullingMask = ~blueLayerMask;
     }
 
-    private void NormalView()
+	public void NormalView()
     {
         SwitchToFilter(Couleur.normal);
         PlayerCamera.cullingMask = ~redLayerMask & ~blueLayerMask;
