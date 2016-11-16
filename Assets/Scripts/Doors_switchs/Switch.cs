@@ -10,6 +10,8 @@ public class Switch : MonoBehaviour
 		{
 			bouton = true;
 			transform.position = new Vector3 (transform.position.x, -0.033f, transform.position.z);
-		}
+            Renderer rend = GetComponent<Renderer>();
+            rend.material.color = Color.green;
+        }
 	}
 }
