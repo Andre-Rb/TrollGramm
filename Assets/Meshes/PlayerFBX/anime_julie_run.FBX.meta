@@ -1,0 +1,239 @@
+fileFormatVersion: 2
+guid: def2b77218f8b4f489b4ef3fd708b9e1
+timeCreated: 1479295902
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Julie_arm_left_Mesh
+    100004: Julie_arm_right_Mesh
+    100006: Julie_Bip001
+    100008: Julie_Bip001 Footsteps
+    100010: Julie_Bip001 Head
+    100012: Julie_Bip001 HeadNub
+    100014: Julie_Bip001 L Calf
+    100016: Julie_Bip001 L Clavicle
+    100018: Julie_Bip001 L Finger0
+    100020: Julie_Bip001 L Finger01
+    100022: Julie_Bip001 L Finger02
+    100024: Julie_Bip001 L Finger0Nub
+    100026: Julie_Bip001 L Finger1
+    100028: Julie_Bip001 L Finger11
+    100030: Julie_Bip001 L Finger12
+    100032: Julie_Bip001 L Finger1Nub
+    100034: Julie_Bip001 L Finger2
+    100036: Julie_Bip001 L Finger21
+    100038: Julie_Bip001 L Finger22
+    100040: Julie_Bip001 L Finger2Nub
+    100042: Julie_Bip001 L Finger3
+    100044: Julie_Bip001 L Finger31
+    100046: Julie_Bip001 L Finger32
+    100048: Julie_Bip001 L Finger3Nub
+    100050: Julie_Bip001 L Finger4
+    100052: Julie_Bip001 L Finger41
+    100054: Julie_Bip001 L Finger42
+    100056: Julie_Bip001 L Finger4Nub
+    100058: Julie_Bip001 L Foot
+    100060: Julie_Bip001 L Forearm
+    100062: Julie_Bip001 L Hand
+    100064: Julie_Bip001 L Thigh
+    100066: Julie_Bip001 L Toe0
+    100068: Julie_Bip001 L Toe0Nub
+    100070: Julie_Bip001 L UpperArm
+    100072: Julie_Bip001 Neck
+    100074: Julie_Bip001 Pelvis
+    100076: Julie_Bip001 R Calf
+    100078: Julie_Bip001 R Clavicle
+    100080: Julie_Bip001 R Finger0
+    100082: Julie_Bip001 R Finger01
+    100084: Julie_Bip001 R Finger02
+    100086: Julie_Bip001 R Finger0Nub
+    100088: Julie_Bip001 R Finger1
+    100090: Julie_Bip001 R Finger11
+    100092: Julie_Bip001 R Finger12
+    100094: Julie_Bip001 R Finger1Nub
+    100096: Julie_Bip001 R Finger2
+    100098: Julie_Bip001 R Finger21
+    100100: Julie_Bip001 R Finger22
+    100102: Julie_Bip001 R Finger2Nub
+    100104: Julie_Bip001 R Finger3
+    100106: Julie_Bip001 R Finger31
+    100108: Julie_Bip001 R Finger32
+    100110: Julie_Bip001 R Finger3Nub
+    100112: Julie_Bip001 R Finger4
+    100114: Julie_Bip001 R Finger41
+    100116: Julie_Bip001 R Finger42
+    100118: Julie_Bip001 R Finger4Nub
+    100120: Julie_Bip001 R Foot
+    100122: Julie_Bip001 R Forearm
+    100124: Julie_Bip001 R Hand
+    100126: Julie_Bip001 R Thigh
+    100128: Julie_Bip001 R Toe0
+    100130: Julie_Bip001 R Toe0Nub
+    100132: Julie_Bip001 R UpperArm
+    100134: Julie_Bip001 Spine
+    100136: Julie_Bip001 Spine1
+    100138: Julie_Bip001 Spine2
+    100140: Julie_Bip001 Spine3
+    100142: Julie_foot_lefts_Mesh
+    100144: Julie_foot_right_Mesh
+    100146: Julie_jean_Mesh
+    100148: Julie_tshirt_Mesh
+    100150: Julie_visage_Mesh
+    400000: //RootNode
+    400002: Julie_arm_left_Mesh
+    400004: Julie_arm_right_Mesh
+    400006: Julie_Bip001
+    400008: Julie_Bip001 Footsteps
+    400010: Julie_Bip001 Head
+    400012: Julie_Bip001 HeadNub
+    400014: Julie_Bip001 L Calf
+    400016: Julie_Bip001 L Clavicle
+    400018: Julie_Bip001 L Finger0
+    400020: Julie_Bip001 L Finger01
+    400022: Julie_Bip001 L Finger02
+    400024: Julie_Bip001 L Finger0Nub
+    400026: Julie_Bip001 L Finger1
+    400028: Julie_Bip001 L Finger11
+    400030: Julie_Bip001 L Finger12
+    400032: Julie_Bip001 L Finger1Nub
+    400034: Julie_Bip001 L Finger2
+    400036: Julie_Bip001 L Finger21
+    400038: Julie_Bip001 L Finger22
+    400040: Julie_Bip001 L Finger2Nub
+    400042: Julie_Bip001 L Finger3
+    400044: Julie_Bip001 L Finger31
+    400046: Julie_Bip001 L Finger32
+    400048: Julie_Bip001 L Finger3Nub
+    400050: Julie_Bip001 L Finger4
+    400052: Julie_Bip001 L Finger41
+    400054: Julie_Bip001 L Finger42
+    400056: Julie_Bip001 L Finger4Nub
+    400058: Julie_Bip001 L Foot
+    400060: Julie_Bip001 L Forearm
+    400062: Julie_Bip001 L Hand
+    400064: Julie_Bip001 L Thigh
+    400066: Julie_Bip001 L Toe0
+    400068: Julie_Bip001 L Toe0Nub
+    400070: Julie_Bip001 L UpperArm
+    400072: Julie_Bip001 Neck
+    400074: Julie_Bip001 Pelvis
+    400076: Julie_Bip001 R Calf
+    400078: Julie_Bip001 R Clavicle
+    400080: Julie_Bip001 R Finger0
+    400082: Julie_Bip001 R Finger01
+    400084: Julie_Bip001 R Finger02
+    400086: Julie_Bip001 R Finger0Nub
+    400088: Julie_Bip001 R Finger1
+    400090: Julie_Bip001 R Finger11
+    400092: Julie_Bip001 R Finger12
+    400094: Julie_Bip001 R Finger1Nub
+    400096: Julie_Bip001 R Finger2
+    400098: Julie_Bip001 R Finger21
+    400100: Julie_Bip001 R Finger22
+    400102: Julie_Bip001 R Finger2Nub
+    400104: Julie_Bip001 R Finger3
+    400106: Julie_Bip001 R Finger31
+    400108: Julie_Bip001 R Finger32
+    400110: Julie_Bip001 R Finger3Nub
+    400112: Julie_Bip001 R Finger4
+    400114: Julie_Bip001 R Finger41
+    400116: Julie_Bip001 R Finger42
+    400118: Julie_Bip001 R Finger4Nub
+    400120: Julie_Bip001 R Foot
+    400122: Julie_Bip001 R Forearm
+    400124: Julie_Bip001 R Hand
+    400126: Julie_Bip001 R Thigh
+    400128: Julie_Bip001 R Toe0
+    400130: Julie_Bip001 R Toe0Nub
+    400132: Julie_Bip001 R UpperArm
+    400134: Julie_Bip001 Spine
+    400136: Julie_Bip001 Spine1
+    400138: Julie_Bip001 Spine2
+    400140: Julie_Bip001 Spine3
+    400142: Julie_foot_lefts_Mesh
+    400144: Julie_foot_right_Mesh
+    400146: Julie_jean_Mesh
+    400148: Julie_tshirt_Mesh
+    400150: Julie_visage_Mesh
+    4300000: Julie_arm_left_Mesh
+    4300002: Julie_tshirt_Mesh
+    4300004: Julie_jean_Mesh
+    4300006: Julie_foot_right_Mesh
+    4300008: Julie_arm_right_Mesh
+    4300010: Julie_visage_Mesh
+    4300012: Julie_foot_lefts_Mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Julie_arm_left_Mesh
+    13700002: Julie_arm_right_Mesh
+    13700004: Julie_foot_lefts_Mesh
+    13700006: Julie_foot_right_Mesh
+    13700008: Julie_jean_Mesh
+    13700010: Julie_tshirt_Mesh
+    13700012: Julie_visage_Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
