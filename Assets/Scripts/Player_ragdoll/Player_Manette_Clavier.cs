@@ -11,22 +11,33 @@ public class Player_Manette_Clavier : MonoBehaviour
     public GameObject HeadGameObject;
     public bool showHead;
 
-    private bool isGrounded = false;
+    private bool _isGrounded;
 
     private float forwardVelocity;
 
     private Animator _animator;
 
 
-
     Rigidbody rb;
 
+    public bool IsGrounded
+    {
+        get { return _isGrounded; }
+        set
+        {
+            _isGrounded = value;
+            _animator.SetBool(CharacterAnimatorState.isGrounded.ToString(), value);
+        }
+    }
+
+    // ReSharper disable once UnusedMember.Local
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
     }
 
+    // ReSharper disable once UnusedMember.Local
     void Update()
     {
         Move();
@@ -36,21 +47,21 @@ public class Player_Manette_Clavier : MonoBehaviour
 
     void Move()
     {
-            float moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
-            float moveV = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
+        float moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
+        float moveV = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
 
-            transform.Translate(new Vector3(moveH, 0, moveV));
-            //rb.AddForce(transform.right * moveH * 4000);
-            //rb.AddForce(transform.forward * moveV * 4000);
+        transform.Translate(new Vector3(moveH, 0, moveV));
+        //rb.AddForce(transform.right * moveH * 4000);
+        //rb.AddForce(transform.forward * moveV * 4000);
 
-            _animator.SetBool(CharacterAnimatorState.isMoving.ToString(), (Math.Abs(moveV) + Math.Abs(moveH)) > 0);
+        _animator.SetBool(CharacterAnimatorState.isMoving.ToString(), (Math.Abs(moveV) + Math.Abs(moveH)) > 0);
 
 
-            _animator.SetBool(CharacterAnimatorState.isWalkingStraight.ToString(), Input.GetAxis("Vertical") > 0);
-            _animator.SetBool(CharacterAnimatorState.isStraffing.ToString(), Math.Abs(Input.GetAxis("Horizontal")) > 0);
+        _animator.SetBool(CharacterAnimatorState.isWalkingStraight.ToString(), Input.GetAxis("Vertical") > 0);
+        _animator.SetBool(CharacterAnimatorState.isStraffing.ToString(), Math.Abs(Input.GetAxis("Horizontal")) > 0);
 
-            _animator.SetFloat(CharacterAnimatorState.XWalking.ToString(), Input.GetAxis("Vertical"));
-            _animator.SetFloat(CharacterAnimatorState.YWalking.ToString(), Input.GetAxis("Horizontal"));
+        _animator.SetFloat(CharacterAnimatorState.XWalking.ToString(), Input.GetAxis("Vertical"));
+        _animator.SetFloat(CharacterAnimatorState.YWalking.ToString(), Input.GetAxis("Horizontal"));
     }
 
     void Rotation()
@@ -62,91 +73,68 @@ public class Player_Manette_Clavier : MonoBehaviour
         {
             transform.rotation *= Quaternion.Euler(0, rotV, 0);
             _animator.SetBool(CharacterAnimatorState.isShuffling.ToString(), true);
-
         }
         else
         {
             _animator.SetBool(CharacterAnimatorState.isShuffling.ToString(), false);
-
         }
 
 
         Quaternion nextRotation = camera.transform.rotation * Quaternion.Euler(rotH, 0, 0);
         if (nextRotation.eulerAngles.x <= 80 || nextRotation.eulerAngles.x >= 280)
             camera.transform.rotation = nextRotation;
-
     }
 
     void Jump()
     {
         float jump = Input.GetAxis("Jump") * JumpHeight * Time.deltaTime;
 
-        if (isGrounded)
+        if (_isGrounded)
         {
-
-			rb.velocity = new Vector3(0, jump * 500, 0);
+            rb.velocity = new Vector3(0, jump * 500, 0);
 
             _animator.SetTrigger(CharacterAnimatorState.ForwardJump.ToString());
-
         }
-
     }
 
+    // ReSharper disable once UnusedMember.Local
     void OnCollisionStay(Collision other)
     {
-        if (isGrounded)
-        {
-
-            isGrounded = true;
-            _animator.SetBool(CharacterAnimatorState.isGrounded.ToString(), true);
-        }
+        if (other.gameObject.tag == Tags.Ground.ToString())
+            _isGrounded = true;
     }
 
+    // ReSharper disable once UnusedMember.Local
     void OnCollisionExit(Collision other)
     {
-        if (isGrounded)
-        {
-            isGrounded = false;
-            _animator.SetBool(CharacterAnimatorState.isGrounded.ToString(), false);
+        if (other.gameObject.tag ==  Tags.Ground.ToString())
+            _isGrounded = false;
 
-        }
     }
 
 
     void CalcForwardVelocity()
     {
         Vector3 localVelocity = transform.InverseTransformDirection(GetComponent<Rigidbody>().velocity);
-        forwardVelocity = localVelocity.z;
+        forwardVelocity
+            =
+            localVelocity.z;
 
-        if (forwardVelocity > 0.1f)
-            Debug.Log(forwardVelocity);
+        if (
+            forwardVelocity
+            > 0.1f)
+            Debug.Log
+            (
+                forwardVelocity
+            );
     }
+
     /*void OnCollisionEnter(Collider other)
-	{
-		if(other.gameObject.tag == "Pacman")
-		{
-			Destroy (gameObject);
-			SceneManager.LoadScene ("Game Over");
-		}
-	}*/
+            {
+                if(other.gameObject.tag == "Pacman")
+                {
+                    Destroy (gameObject);
+                    SceneManager.LoadScene ("Game Over");
+                }
+            }*/
 }
-
-
-
-/*enum CharacterAnimatorState
-{
-
-    XWalking,
-    YWalking,
-    ForwardJump,
-    isGrounded,
-    isShuffling,
-    isWalkingStraight,
-    isStraffing,
-    isMoving
-}
-
-enum Tags
-{
-    Ground
-}*/
