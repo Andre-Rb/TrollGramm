@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: TestController
+  m_Name: PlayerController
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: XWalking
@@ -566,7 +566,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400002, guid: 248b12f913c0113469980414af6a89c2, type: 3}
+  m_Motion: {fileID: 7400002, guid: 5176a629dfa323d4baf2a85f942061fe, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -719,7 +719,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 248b12f913c0113469980414af6a89c2, type: 3}
+  m_Motion: {fileID: 7400000, guid: 5176a629dfa323d4baf2a85f942061fe, type: 3}
   m_Tag: 
   m_SpeedParameter: XWalking
   m_MirrorParameter: 
