@@ -1,0 +1,1354 @@
+fileFormatVersion: 2
+guid: e312ef8dae4f69e4a9414ceb82de7803
+timeCreated: 1479295903
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Julie_arm_left_Mesh
+    100004: Julie_arm_right_Mesh
+    100006: Julie_Bip001
+    100008: Julie_Bip001 Footsteps
+    100010: Julie_Bip001 Head
+    100012: Julie_Bip001 HeadNub
+    100014: Julie_Bip001 L Calf
+    100016: Julie_Bip001 L Clavicle
+    100018: Julie_Bip001 L Finger0
+    100020: Julie_Bip001 L Finger01
+    100022: Julie_Bip001 L Finger02
+    100024: Julie_Bip001 L Finger0Nub
+    100026: Julie_Bip001 L Finger1
+    100028: Julie_Bip001 L Finger11
+    100030: Julie_Bip001 L Finger12
+    100032: Julie_Bip001 L Finger1Nub
+    100034: Julie_Bip001 L Finger2
+    100036: Julie_Bip001 L Finger21
+    100038: Julie_Bip001 L Finger22
+    100040: Julie_Bip001 L Finger2Nub
+    100042: Julie_Bip001 L Finger3
+    100044: Julie_Bip001 L Finger31
+    100046: Julie_Bip001 L Finger32
+    100048: Julie_Bip001 L Finger3Nub
+    100050: Julie_Bip001 L Finger4
+    100052: Julie_Bip001 L Finger41
+    100054: Julie_Bip001 L Finger42
+    100056: Julie_Bip001 L Finger4Nub
+    100058: Julie_Bip001 L Foot
+    100060: Julie_Bip001 L Forearm
+    100062: Julie_Bip001 L Hand
+    100064: Julie_Bip001 L Thigh
+    100066: Julie_Bip001 L Toe0
+    100068: Julie_Bip001 L Toe0Nub
+    100070: Julie_Bip001 L UpperArm
+    100072: Julie_Bip001 Neck
+    100074: Julie_Bip001 Pelvis
+    100076: Julie_Bip001 R Calf
+    100078: Julie_Bip001 R Clavicle
+    100080: Julie_Bip001 R Finger0
+    100082: Julie_Bip001 R Finger01
+    100084: Julie_Bip001 R Finger02
+    100086: Julie_Bip001 R Finger0Nub
+    100088: Julie_Bip001 R Finger1
+    100090: Julie_Bip001 R Finger11
+    100092: Julie_Bip001 R Finger12
+    100094: Julie_Bip001 R Finger1Nub
+    100096: Julie_Bip001 R Finger2
+    100098: Julie_Bip001 R Finger21
+    100100: Julie_Bip001 R Finger22
+    100102: Julie_Bip001 R Finger2Nub
+    100104: Julie_Bip001 R Finger3
+    100106: Julie_Bip001 R Finger31
+    100108: Julie_Bip001 R Finger32
+    100110: Julie_Bip001 R Finger3Nub
+    100112: Julie_Bip001 R Finger4
+    100114: Julie_Bip001 R Finger41
+    100116: Julie_Bip001 R Finger42
+    100118: Julie_Bip001 R Finger4Nub
+    100120: Julie_Bip001 R Foot
+    100122: Julie_Bip001 R Forearm
+    100124: Julie_Bip001 R Hand
+    100126: Julie_Bip001 R Thigh
+    100128: Julie_Bip001 R Toe0
+    100130: Julie_Bip001 R Toe0Nub
+    100132: Julie_Bip001 R UpperArm
+    100134: Julie_Bip001 Spine
+    100136: Julie_Bip001 Spine1
+    100138: Julie_Bip001 Spine2
+    100140: Julie_Bip001 Spine3
+    100142: Julie_foot_lefts_Mesh
+    100144: Julie_foot_right_Mesh
+    100146: Julie_jean_Mesh
+    100148: Julie_tshirt_Mesh
+    100150: Julie_visage_Mesh
+    400000: //RootNode
+    400002: Julie_arm_left_Mesh
+    400004: Julie_arm_right_Mesh
+    400006: Julie_Bip001
+    400008: Julie_Bip001 Footsteps
+    400010: Julie_Bip001 Head
+    400012: Julie_Bip001 HeadNub
+    400014: Julie_Bip001 L Calf
+    400016: Julie_Bip001 L Clavicle
+    400018: Julie_Bip001 L Finger0
+    400020: Julie_Bip001 L Finger01
+    400022: Julie_Bip001 L Finger02
+    400024: Julie_Bip001 L Finger0Nub
+    400026: Julie_Bip001 L Finger1
+    400028: Julie_Bip001 L Finger11
+    400030: Julie_Bip001 L Finger12
+    400032: Julie_Bip001 L Finger1Nub
+    400034: Julie_Bip001 L Finger2
+    400036: Julie_Bip001 L Finger21
+    400038: Julie_Bip001 L Finger22
+    400040: Julie_Bip001 L Finger2Nub
+    400042: Julie_Bip001 L Finger3
+    400044: Julie_Bip001 L Finger31
+    400046: Julie_Bip001 L Finger32
+    400048: Julie_Bip001 L Finger3Nub
+    400050: Julie_Bip001 L Finger4
+    400052: Julie_Bip001 L Finger41
+    400054: Julie_Bip001 L Finger42
+    400056: Julie_Bip001 L Finger4Nub
+    400058: Julie_Bip001 L Foot
+    400060: Julie_Bip001 L Forearm
+    400062: Julie_Bip001 L Hand
+    400064: Julie_Bip001 L Thigh
+    400066: Julie_Bip001 L Toe0
+    400068: Julie_Bip001 L Toe0Nub
+    400070: Julie_Bip001 L UpperArm
+    400072: Julie_Bip001 Neck
+    400074: Julie_Bip001 Pelvis
+    400076: Julie_Bip001 R Calf
+    400078: Julie_Bip001 R Clavicle
+    400080: Julie_Bip001 R Finger0
+    400082: Julie_Bip001 R Finger01
+    400084: Julie_Bip001 R Finger02
+    400086: Julie_Bip001 R Finger0Nub
+    400088: Julie_Bip001 R Finger1
+    400090: Julie_Bip001 R Finger11
+    400092: Julie_Bip001 R Finger12
+    400094: Julie_Bip001 R Finger1Nub
+    400096: Julie_Bip001 R Finger2
+    400098: Julie_Bip001 R Finger21
+    400100: Julie_Bip001 R Finger22
+    400102: Julie_Bip001 R Finger2Nub
+    400104: Julie_Bip001 R Finger3
+    400106: Julie_Bip001 R Finger31
+    400108: Julie_Bip001 R Finger32
+    400110: Julie_Bip001 R Finger3Nub
+    400112: Julie_Bip001 R Finger4
+    400114: Julie_Bip001 R Finger41
+    400116: Julie_Bip001 R Finger42
+    400118: Julie_Bip001 R Finger4Nub
+    400120: Julie_Bip001 R Foot
+    400122: Julie_Bip001 R Forearm
+    400124: Julie_Bip001 R Hand
+    400126: Julie_Bip001 R Thigh
+    400128: Julie_Bip001 R Toe0
+    400130: Julie_Bip001 R Toe0Nub
+    400132: Julie_Bip001 R UpperArm
+    400134: Julie_Bip001 Spine
+    400136: Julie_Bip001 Spine1
+    400138: Julie_Bip001 Spine2
+    400140: Julie_Bip001 Spine3
+    400142: Julie_foot_lefts_Mesh
+    400144: Julie_foot_right_Mesh
+    400146: Julie_jean_Mesh
+    400148: Julie_tshirt_Mesh
+    400150: Julie_visage_Mesh
+    4300000: Julie_arm_left_Mesh
+    4300002: Julie_tshirt_Mesh
+    4300004: Julie_jean_Mesh
+    4300006: Julie_foot_right_Mesh
+    4300008: Julie_arm_right_Mesh
+    4300010: Julie_visage_Mesh
+    4300012: Julie_foot_lefts_Mesh
+    7400000: Walking
+    9500000: //RootNode
+    13700000: Julie_arm_left_Mesh
+    13700002: Julie_arm_right_Mesh
+    13700004: Julie_foot_lefts_Mesh
+    13700006: Julie_foot_right_Mesh
+    13700008: Julie_jean_Mesh
+    13700010: Julie_tshirt_Mesh
+    13700012: Julie_visage_Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nDefault bone length found in this file is different
+      form the one found in the source avatar:\n\t'Julie_Bip001 L Thigh' : position
+      error = 1.143982 mm\n\t'Julie_Bip001 R Thigh' : position error = 1.143715 mm\n\nClip
+      'Take 001' has import animation warnings that might lower retargeting quality:\n\t'Julie_Bip001
+      Spine' is inbetween humanoid transforms and has rotation animation that will
+      be discarded.\n\t'Julie_Bip001 Spine2' is inbetween humanoid transforms and
+      has rotation animation that will be discarded.\n\t'Julie_Bip001 L Thigh' has
+      translation animation that will be discarded.\n\t'Julie_Bip001 R Thigh' has
+      translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walking
+      takeName: Take 001
+      firstFrame: 140
+      lastFrame: 172
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Julie_arm_left_Mesh
+        weight: 0
+      - path: Julie_arm_right_Mesh
+        weight: 0
+      - path: Julie_Bip001
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Footsteps
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 L Thigh
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 L Thigh/Julie_Bip001
+          L Calf
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 L Thigh/Julie_Bip001
+          L Calf/Julie_Bip001 L Foot
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 L Thigh/Julie_Bip001
+          L Calf/Julie_Bip001 L Foot/Julie_Bip001 L Toe0
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 L Thigh/Julie_Bip001
+          L Calf/Julie_Bip001 L Foot/Julie_Bip001 L Toe0/Julie_Bip001 L Toe0Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 R Thigh
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 R Thigh/Julie_Bip001
+          R Calf
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 R Thigh/Julie_Bip001
+          R Calf/Julie_Bip001 R Foot
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 R Thigh/Julie_Bip001
+          R Calf/Julie_Bip001 R Foot/Julie_Bip001 R Toe0
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 R Thigh/Julie_Bip001
+          R Calf/Julie_Bip001 R Foot/Julie_Bip001 R Toe0/Julie_Bip001 R Toe0Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 Head
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 Head/Julie_Bip001
+          HeadNub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger0
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger0/Julie_Bip001
+          L Finger01
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger0/Julie_Bip001
+          L Finger01/Julie_Bip001 L Finger02
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger0/Julie_Bip001
+          L Finger01/Julie_Bip001 L Finger02/Julie_Bip001 L Finger0Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger1
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger1/Julie_Bip001
+          L Finger11
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger1/Julie_Bip001
+          L Finger11/Julie_Bip001 L Finger12
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger1/Julie_Bip001
+          L Finger11/Julie_Bip001 L Finger12/Julie_Bip001 L Finger1Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger2
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger2/Julie_Bip001
+          L Finger21
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger2/Julie_Bip001
+          L Finger21/Julie_Bip001 L Finger22
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger2/Julie_Bip001
+          L Finger21/Julie_Bip001 L Finger22/Julie_Bip001 L Finger2Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger3
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger3/Julie_Bip001
+          L Finger31
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger3/Julie_Bip001
+          L Finger31/Julie_Bip001 L Finger32
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger3/Julie_Bip001
+          L Finger31/Julie_Bip001 L Finger32/Julie_Bip001 L Finger3Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger4
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger4/Julie_Bip001
+          L Finger41
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger4/Julie_Bip001
+          L Finger41/Julie_Bip001 L Finger42
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 L Clavicle/Julie_Bip001
+          L UpperArm/Julie_Bip001 L Forearm/Julie_Bip001 L Hand/Julie_Bip001 L Finger4/Julie_Bip001
+          L Finger41/Julie_Bip001 L Finger42/Julie_Bip001 L Finger4Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger0
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger0/Julie_Bip001
+          R Finger01
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger0/Julie_Bip001
+          R Finger01/Julie_Bip001 R Finger02
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger0/Julie_Bip001
+          R Finger01/Julie_Bip001 R Finger02/Julie_Bip001 R Finger0Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger1
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger1/Julie_Bip001
+          R Finger11
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger1/Julie_Bip001
+          R Finger11/Julie_Bip001 R Finger12
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger1/Julie_Bip001
+          R Finger11/Julie_Bip001 R Finger12/Julie_Bip001 R Finger1Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger2
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger2/Julie_Bip001
+          R Finger21
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger2/Julie_Bip001
+          R Finger21/Julie_Bip001 R Finger22
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger2/Julie_Bip001
+          R Finger21/Julie_Bip001 R Finger22/Julie_Bip001 R Finger2Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger3
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger3/Julie_Bip001
+          R Finger31
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger3/Julie_Bip001
+          R Finger31/Julie_Bip001 R Finger32
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger3/Julie_Bip001
+          R Finger31/Julie_Bip001 R Finger32/Julie_Bip001 R Finger3Nub
+        weight: 0
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger4
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger4/Julie_Bip001
+          R Finger41
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger4/Julie_Bip001
+          R Finger41/Julie_Bip001 R Finger42
+        weight: 1
+      - path: Julie_Bip001/Julie_Bip001 Pelvis/Julie_Bip001 Spine/Julie_Bip001 Spine1/Julie_Bip001
+          Spine2/Julie_Bip001 Spine3/Julie_Bip001 Neck/Julie_Bip001 R Clavicle/Julie_Bip001
+          R UpperArm/Julie_Bip001 R Forearm/Julie_Bip001 R Hand/Julie_Bip001 R Finger4/Julie_Bip001
+          R Finger41/Julie_Bip001 R Finger42/Julie_Bip001 R Finger4Nub
+        weight: 0
+      - path: Julie_foot_lefts_Mesh
+        weight: 0
+      - path: Julie_foot_right_Mesh
+        weight: 0
+      - path: Julie_jean_Mesh
+        weight: 0
+      - path: Julie_tshirt_Mesh
+        weight: 0
+      - path: Julie_visage_Mesh
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human:
+    - boneName: Julie_Bip001
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 Spine3
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger02
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger12
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger2
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger21
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger22
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger3
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger31
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger32
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger4
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger41
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 L Finger42
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger02
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger12
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger2
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger21
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger22
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger3
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger31
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger32
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger4
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger41
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Julie_Bip001 R Finger42
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Julie_mesh_skin_ok(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0.011659977, z: 0, w: 0.99993205}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Julie_arm_left_Mesh
+      position: {x: 0.0049141645, y: 0.04197693, z: -0.022326231}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.009452128, y: 0.009452128, z: 0.009452128}
+      transformModified: 1
+    - name: Julie_arm_right_Mesh
+      position: {x: -0.0029073954, y: 0.044189453, z: -0.020111084}
+      rotation: {x: -0.70090926, y: 0, z: -0, w: 0.71325046}
+      scale: {x: -0.009452128, y: -0.009452128, z: -0.009452128}
+      transformModified: 1
+    - name: Julie_Bip001
+      position: {x: -0, y: 0.8108099, z: 0}
+      rotation: {x: -0.49666527, y: 0.50402766, z: 0.5075521, w: 0.4916002}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000007}
+      transformModified: 1
+    - name: Julie_Bip001 Footsteps
+      position: {x: -0, y: 0, z: -0.81082535}
+      rotation: {x: 0, y: -0, z: -0.7071063, w: 0.70710725}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Julie_Bip001 Pelvis
+      position: {x: -0.0000638387, y: -0.000333499, z: 0.03890847}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1.000001, y: 1.0000004, z: 1.0000011}
+      transformModified: 1
+    - name: Julie_Bip001 Spine
+      position: {x: -0.09490287, y: -0.00009135735, z: 0.00000013173798}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000013, z: 0.9999999}
+      transformModified: 1
+    - name: Julie_Bip001 L Thigh
+      position: {x: 0.094902724, y: 0.00016671262, z: 0.09120779}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.9999994, y: 0.99999994, z: 1}
+      transformModified: 1
+    - name: Julie_Bip001 L Calf
+      position: {x: -0.37572932, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.000001, y: 1.000002, z: 1.000001}
+      transformModified: 1
+    - name: Julie_Bip001 L Foot
+      position: {x: -0.36700737, y: -0.0000000047683715, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000002, z: 0.9999998}
+      transformModified: 1
+    - name: Julie_Bip001 L Toe0
+      position: {x: -0.08246433, y: 0.12213592, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 0.9999999, y: 0.99999917, z: 1.0000005}
+      transformModified: 1
+    - name: Julie_Bip001 L Toe0Nub
+      position: {x: -0.048552282, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+      transformModified: 1
+    - name: Julie_Bip001 R Thigh
+      position: {x: 0.094902724, y: 0.00016721859, z: -0.09120779}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.9999991, y: 1.0000001, z: 0.99999976}
+      transformModified: 1
+    - name: Julie_Bip001 R Calf
+      position: {x: -0.37572932, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000015, y: 1.0000008, z: 1.0000008}
+      transformModified: 1
+    - name: Julie_Bip001 R Foot
+      position: {x: -0.36700732, y: 0, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999946, y: 0.9999995, z: 0.99999994}
+      transformModified: 1
+    - name: Julie_Bip001 R Toe0
+      position: {x: -0.08246433, y: 0.12213592, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000014, y: 0.9999999, z: 1.0000008}
+      transformModified: 1
+    - name: Julie_Bip001 R Toe0Nub
+      position: {x: -0.048552282, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: Julie_Bip001 Spine1
+      position: {x: -0.11478073, y: -0.00009139694, z: -2.5349833e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000005}
+      transformModified: 1
+    - name: Julie_Bip001 Spine2
+      position: {x: -0.114780806, y: -0.000091397014, z: -2.5349892e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999964, y: 0.9999991, z: 0.9999995}
+      transformModified: 1
+    - name: Julie_Bip001 Spine3
+      position: {x: -0.11478065, y: -0.00009139694, z: -2.534986e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+      transformModified: 1
+    - name: Julie_Bip001 Neck
+      position: {x: -0.114797205, y: -0.00008313537, z: -2.3058647e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000005}
+      transformModified: 1
+    - name: Julie_Bip001 Head
+      position: {x: -0.106414944, y: 0.000000019073486, z: 7.2759575e-14}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+      transformModified: 1
+    - name: Julie_Bip001 HeadNub
+      position: {x: -0.19393173, y: 0.000000019073486, z: 7.2759575e-14}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Julie_Bip001 L Clavicle
+      position: {x: -0, y: 0.000084667205, z: 0.029801643}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 0.9999995, y: 0.99999964, z: 0.9999999}
+      transformModified: 1
+    - name: Julie_Bip001 L UpperArm
+      position: {x: -0.14701553, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000006, z: 0.9999994}
+      transformModified: 1
+    - name: Julie_Bip001 L Forearm
+      position: {x: -0.24108467, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: Julie_Bip001 L Hand
+      position: {x: -0.22480865, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 1.0000004, y: 1.0000017, z: 1.0000011}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger0
+      position: {x: -0.02866966, y: 0.027489739, z: -0.01949955}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 1.0000005, y: 1.0000008, z: 1.0000007}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger01
+      position: {x: -0.030761719, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 0.99999994, z: 0.9999998}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger02
+      position: {x: -0.03114212, y: 0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000006, z: 1.0000005}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger0Nub
+      position: {x: -0.025788803, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger1
+      position: {x: -0.118516155, y: 0.0039330292, z: -0.02022091}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000008, z: 1.0000007}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger11
+      position: {x: -0.021863403, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000011, z: 1.0000014}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger12
+      position: {x: -0.024182204, y: 0, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 0.99999946, z: 0.99999976}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger1Nub
+      position: {x: -0.016995315, y: 0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger2
+      position: {x: -0.116497874, y: -0.0036323546, z: -0.0038430023}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000013, z: 1.0000006}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger21
+      position: {x: -0.02936531, y: -0.000000009536743, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000012, z: 1.0000013}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger22
+      position: {x: -0.024492873, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 0.9999995, z: 0.9999997}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger2Nub
+      position: {x: -0.019644242, y: 0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger3
+      position: {x: -0.11800682, y: -0.0029178236, z: 0.010329323}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000008}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger31
+      position: {x: -0.025361938, y: -0.000000009536743, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999996, y: 0.9999999, z: 1}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger32
+      position: {x: -0.020993957, y: -0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999946}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger3Nub
+      position: {x: -0.016995315, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger4
+      position: {x: -0.11622726, y: -0.0016236114, z: 0.025202636}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000011, z: 1.0000008}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger41
+      position: {x: -0.022512054, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000008, y: 1.0000011, z: 1.0000013}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger42
+      position: {x: -0.019487152, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 0.9999997, z: 1.0000004}
+      transformModified: 1
+    - name: Julie_Bip001 L Finger4Nub
+      position: {x: -0.014162826, y: 0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
+      transformModified: 1
+    - name: Julie_Bip001 R Clavicle
+      position: {x: -0, y: 0.00008481979, z: -0.029801643}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 1.0000015, y: 0.9999994, z: 1.0000001}
+      transformModified: 1
+    - name: Julie_Bip001 R UpperArm
+      position: {x: -0.14701553, y: 4.5474734e-15, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000019, y: 1.0000012, z: 1.0000017}
+      transformModified: 1
+    - name: Julie_Bip001 R Forearm
+      position: {x: -0.24108474, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999975, y: 0.9999999, z: 0.9999991}
+      transformModified: 1
+    - name: Julie_Bip001 R Hand
+      position: {x: -0.22480857, y: -0.000000019073486, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 0.9999996, y: 0.9999999, z: 0.9999995}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger0
+      position: {x: -0.02866966, y: 0.027489662, z: 0.01949955}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 1.0000012, y: 1.0000006, z: 1.0000014}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger01
+      position: {x: -0.030761719, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.99999976, z: 0.9999998}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger02
+      position: {x: -0.031142043, y: 0.000000038146972, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000006, z: 1.0000011}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger0Nub
+      position: {x: -0.025788803, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger1
+      position: {x: -0.118516155, y: 0.003932991, z: 0.02022087}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000008, y: 1.0000005, z: 1.0000008}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger11
+      position: {x: -0.021863403, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000004}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger12
+      position: {x: -0.024182204, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger1Nub
+      position: {x: -0.01699539, y: 0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1.0000001, y: -1.0000001, z: -1.0000001}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger2
+      position: {x: -0.1164978, y: -0.0036323927, z: 0.0038430023}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000008}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger21
+      position: {x: -0.02936531, y: -0.000000009536743, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000011, y: 1.0000006, z: 1.0000007}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger22
+      position: {x: -0.024492873, y: 0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 0.9999994, z: 1.0000005}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger2Nub
+      position: {x: -0.019644242, y: 0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1.0000001}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger3
+      position: {x: -0.11800682, y: -0.0029178618, z: -0.010329361}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000011, y: 1.0000007, z: 1.0000012}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger31
+      position: {x: -0.025362091, y: -0.000000009536743, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.000001, y: 1.0000013, z: 1.0000007}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger32
+      position: {x: -0.02099388, y: 0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999994, z: 0.9999998}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger3Nub
+      position: {x: -0.016995315, y: 0.000000076293944, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -0.99999994, y: -1, z: -0.99999994}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger4
+      position: {x: -0.11622726, y: -0.0016236496, z: -0.025202675}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000011, y: 1.0000004, z: 1.0000018}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger41
+      position: {x: -0.022512054, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999993, y: 1.0000004, z: 0.99999934}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger42
+      position: {x: -0.019487152, y: -0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.000001, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: Julie_Bip001 R Finger4Nub
+      position: {x: -0.014162826, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+      transformModified: 1
+    - name: Julie_foot_lefts_Mesh
+      position: {x: 0.0039386726, y: -0.008562466, z: 0}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: -0.009452128, y: -0.009452128, z: -0.009452128}
+      transformModified: 1
+    - name: Julie_foot_right_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.009452128, y: 0.009452128, z: 0.009452128}
+      transformModified: 1
+    - name: Julie_jean_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.009452128, y: 0.009452128, z: 0.009452128}
+      transformModified: 1
+    - name: Julie_tshirt_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.009452128, y: 0.009452128, z: 0.009452128}
+      transformModified: 1
+    - name: Julie_visage_Mesh
+      position: {x: -0, y: 1.558342, z: 0.036743164}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.009558798, y: 0.009558798, z: 0.009558798}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 54a320d99c753c34888a33837dc5d211,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

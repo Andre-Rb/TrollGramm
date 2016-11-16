@@ -89,9 +89,9 @@ public class Player_Manette_Clavier : MonoBehaviour
     {
         float jump = Input.GetAxis("Jump") * JumpHeight * Time.deltaTime;
 
-        if (_isGrounded)
+        if (IsGrounded && Math.Abs(jump) > 0.01)
         {
-            rb.velocity = new Vector3(0, jump * 500, 0);
+            rb.velocity = new Vector3(0, jump, 0);
 
             _animator.SetTrigger(CharacterAnimatorState.ForwardJump.ToString());
         }
@@ -101,14 +101,14 @@ public class Player_Manette_Clavier : MonoBehaviour
     void OnCollisionStay(Collision other)
     {
         if (other.gameObject.tag == Tags.Ground.ToString())
-            _isGrounded = true;
+            IsGrounded = true;
     }
 
     // ReSharper disable once UnusedMember.Local
     void OnCollisionExit(Collision other)
     {
-        if (other.gameObject.tag ==  Tags.Ground.ToString())
-            _isGrounded = false;
+        if (other.gameObject.tag == Tags.Ground.ToString())
+            IsGrounded = false;
 
     }
 
