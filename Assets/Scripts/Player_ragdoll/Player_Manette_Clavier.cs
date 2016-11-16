@@ -94,7 +94,7 @@ public class Player_Manette_Clavier : MonoBehaviour
 
     void OnCollisionStay(Collision other)
     {
-        if (useGUILayout)
+        if (isGrounded)
         {
 
             isGrounded = true;
