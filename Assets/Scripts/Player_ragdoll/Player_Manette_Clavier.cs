@@ -37,19 +37,16 @@ public class Player_Manette_Clavier : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    // ReSharper disable once UnusedMember.Local
-    void Update()
-    {
-        Move();
-        Rotation();
-        Jump();
-    }
+
 
     void Move()
     {
         float moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
         float moveV = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
 
+
+        if (moveH > 0)
+            moveH *= 2;
         transform.Translate(new Vector3(moveH, 0, moveV));
         //rb.AddForce(transform.right * moveH * 4000);
         //rb.AddForce(transform.forward * moveV * 4000);
@@ -109,25 +106,29 @@ public class Player_Manette_Clavier : MonoBehaviour
     {
         if (other.gameObject.tag == Tags.Ground.ToString())
             IsGrounded = false;
-
     }
 
 
     void CalcForwardVelocity()
     {
         Vector3 localVelocity = transform.InverseTransformDirection(GetComponent<Rigidbody>().velocity);
-        forwardVelocity
-            =
-            localVelocity.z;
+        forwardVelocity = localVelocity.z;
 
-        if (
-            forwardVelocity
-            > 0.1f)
-            Debug.Log
-            (
-                forwardVelocity
-            );
+        if (forwardVelocity > 0.1f)
+            Debug.Log(forwardVelocity);
     }
+
+    public void FixedUpdate()
+    {
+
+        CalcForwardVelocity();
+        Move();
+        Rotation();
+        Jump();
+    }
+
+
+
 
     /*void OnCollisionEnter(Collider other)
             {
