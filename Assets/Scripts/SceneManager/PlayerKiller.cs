@@ -9,10 +9,23 @@ public class PlayerKiller : MonoBehaviour
     public Camera cameraGameOver = null;
     public Text text;
 
-    void OnTriggerEnter(Collider other)
+    protected string touchePourRespawnMsg;
+
+
+
+    protected virtual void Start()
+    {
+        touchePourRespawnMsg = "\nAppuie sur " + "TODO" + " pour respawn.";
+        text.text = "'Message de mort générique avec accent moqueur'";
+        text.text += touchePourRespawnMsg;
+
+    }
+    // ReSharper disable once UnusedMember.Local
+    protected virtual void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("A player just collided with : " + gameObject.name);
             player.camera.gameObject.SetActive(false);
             cameraGameOver.gameObject.SetActive(true);
             text.gameObject.SetActive(true);
@@ -21,6 +34,7 @@ public class PlayerKiller : MonoBehaviour
     }
 
 
+    // ReSharper disable once UnusedMember.Local
     void Update()
     {
         if (player.PlayerIsDead && player.WantsToRespawn)
