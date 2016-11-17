@@ -674,6 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094102a4ee0b0f749a8c0b8012c0b8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerTransform: {fileID: 0}
   cameraPlayer: {fileID: 12180342}
   cameraGameOver: {fileID: 558947339}
   text: {fileID: 463694935}
@@ -1289,6 +1290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094102a4ee0b0f749a8c0b8012c0b8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerTransform: {fileID: 0}
   cameraPlayer: {fileID: 12180342}
   cameraGameOver: {fileID: 558947339}
   text: {fileID: 463694935}
@@ -5257,8 +5259,10 @@ GameObject:
   - 4: {fileID: 1694921688}
   - 65: {fileID: 1694921686}
   - 114: {fileID: 1694921684}
+  - 114: {fileID: 1694921687}
+  - 114: {fileID: 1694921685}
   m_Layer: 0
-  m_Name: TriggerDial1
+  m_Name: TriggerDial1-2-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5278,6 +5282,21 @@ MonoBehaviour:
   SubtitlesController: {fileID: 92310420}
   PlayerAudioSource: {fileID: 304367836}
   DialogueToPlay: {fileID: 11400000, guid: 31834d57e523cfc4e9158c12f0fe8374, type: 2}
+  SecondDialogue: {fileID: 1694921687}
+--- !u!114 &1694921685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694921683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105c896875f216a43a9d840eadb14861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SubtitlesController: {fileID: 92310420}
+  PlayerAudioSource: {fileID: 304367836}
+  DialogueToPlay: {fileID: 11400000, guid: 9ca269c7c75ef5f4e81b0074959ae924, type: 2}
   doorToOpen: {fileID: 66502281}
 --- !u!65 &1694921686
 BoxCollider:
@@ -5291,6 +5310,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.281767, y: 1, z: 1}
   m_Center: {x: -0.27089214, y: 0, z: 0}
+--- !u!114 &1694921687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694921683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772f2e839c2248a478335b81a8ae68c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SubtitlesController: {fileID: 92310420}
+  PlayerAudioSource: {fileID: 304367836}
+  DialogueToPlay: {fileID: 11400000, guid: cd8ca47f6006e054aa53214e9facb48d, type: 2}
+  ThirdDialogue: {fileID: 1694921685}
 --- !u!4 &1694921688
 Transform:
   m_ObjectHideFlags: 0
@@ -6370,6 +6404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094102a4ee0b0f749a8c0b8012c0b8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerTransform: {fileID: 0}
   cameraPlayer: {fileID: 12180342}
   cameraGameOver: {fileID: 558947339}
   text: {fileID: 463694935}

@@ -1,24 +1,22 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Triggers.Dialogues
+
+public class FirstDialogue : DialogueTrigger
 {
-    public class FirstDialogue : DialogueTrigger
+    public SecondDialogue SecondDialogue;
+    void OnTriggerEnter()
     {
-        public Animator doorToOpen;
+        PlayDialogue();
 
-        void OnTriggerEnter()
-        {
-            PlayDialogue();
+        GetComponent<Collider>().enabled = false;
 
-            GetComponent<Collider>().enabled = false;
+    }
 
-        }
 
-        new void DialogueFinishedPlaying()
-        {
-            doorToOpen.SetTrigger(OtherAnimationParams.OpenDoor.ToString());
-
-        }
+    protected override void DialogueFinishedPlaying()
+    {
+        base.DialogueFinishedPlaying();
+        SecondDialogue.PlayDialogue();
 
     }
 }
