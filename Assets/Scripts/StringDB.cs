@@ -15,3 +15,10 @@ public enum CharacterAnimatorState
     isStraffing,
     isMoving
 }
+
+
+public enum OtherAnimationParams
+{
+    OpenDoor,
+    CloseDoor
+}
