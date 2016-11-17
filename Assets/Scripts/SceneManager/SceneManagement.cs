@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour 
 {
@@ -16,7 +15,7 @@ public class SceneManagement : MonoBehaviour
 		else
 		{
 			instance = this;
-			GameObject.DontDestroyOnLoad (gameObject);
+			DontDestroyOnLoad (gameObject);
 		}
 	}
 
