@@ -121,7 +121,7 @@ public class Player_Manette_Clavier : MonoBehaviour
     public void FixedUpdate()
     {
 
-        CalcForwardVelocity();
+        //CalcForwardVelocity();
         Move();
         Rotation();
         Jump();
