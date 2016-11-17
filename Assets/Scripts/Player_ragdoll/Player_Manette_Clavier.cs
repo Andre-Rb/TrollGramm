@@ -16,6 +16,20 @@ public class Player_Manette_Clavier : MonoBehaviour
     private float forwardVelocity;
 
     private Animator _animator;
+    private bool _playerIsDead;
+
+    public bool PlayerIsDead
+    {
+        get { return _playerIsDead; }
+        set { _playerIsDead = value; }
+    }
+
+    private bool _WantsToRespawn;
+    public bool WantsToRespawn
+    {
+        get { return _WantsToRespawn; }
+        set { _WantsToRespawn = value; }
+    }
 
 
     Rigidbody rb;
@@ -29,6 +43,7 @@ public class Player_Manette_Clavier : MonoBehaviour
             _animator.SetBool(CharacterAnimatorState.isGrounded.ToString(), value);
         }
     }
+
 
     // ReSharper disable once UnusedMember.Local
     void Start()
@@ -116,6 +131,13 @@ public class Player_Manette_Clavier : MonoBehaviour
 
         if (forwardVelocity > 0.1f)
             Debug.Log(forwardVelocity);
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && PlayerIsDead)
+        {
+        }
     }
 
     public void FixedUpdate()
