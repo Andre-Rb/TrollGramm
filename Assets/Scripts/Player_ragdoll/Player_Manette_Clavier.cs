@@ -137,6 +137,7 @@ public class Player_Manette_Clavier : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && PlayerIsDead)
         {
+            WantsToRespawn = true;
         }
     }
 

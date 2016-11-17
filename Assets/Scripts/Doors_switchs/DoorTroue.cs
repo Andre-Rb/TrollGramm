@@ -1,19 +1,17 @@
 ﻿using UnityEngine;
 
-public class DoorTroue : MonoBehaviour 
+public class DoorTroue : MonoBehaviour
 {
-	SceneManagement door;
+ //   private GameObject wallToMakeVanish;
 
-	void Start ()
-	{
-		door = GameObject.FindObjectOfType<SceneManagement> ();
-	}
+	//void Update () 
+	//{
+	//	if (wallToMakeVanish.openDoor == true) 
+	//	{
+	//		gameObject.SetActive (false);
+	//	}
+	//}
 
-	void Update () 
-	{
-		if (door.openDoor == true) 
-		{
-			gameObject.SetActive (false);
-		}
-	}
+
+    //TODO
 }
