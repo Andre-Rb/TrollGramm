@@ -2572,7 +2572,7 @@ Transform:
   - {fileID: 1634653996}
   - {fileID: 1504344259}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!1 &667455238
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,7 +5275,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b47b051df0cd554da63924653391d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelAsset: {fileID: 2051648330}
+  SubtitlesController: {fileID: 92310420}
+  PlayerAudioSource: {fileID: 304367836}
+  DialogueToPlay: {fileID: 11400000, guid: 31834d57e523cfc4e9158c12f0fe8374, type: 2}
+  doorToOpen: {fileID: 66502281}
 --- !u!65 &1694921686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5286,8 +5289,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.281767, y: 1, z: 1}
+  m_Center: {x: -0.27089214, y: 0, z: 0}
 --- !u!4 &1694921688
 Transform:
   m_ObjectHideFlags: 0
@@ -5295,7 +5298,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1694921683}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.324375, y: 2.1907032, z: 0.1265626}
+  m_LocalPosition: {x: 9.63, y: 2.73, z: 1.42}
   m_LocalScale: {x: 1.45, y: 3.4375024, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -5668,7 +5671,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!4 &1822481921
 Transform:
   m_ObjectHideFlags: 0
@@ -6511,60 +6514,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1996576640}
   m_RootOrder: 21
---- !u!1 &2051648329
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2051648331}
-  - 114: {fileID: 2051648330}
-  m_Layer: 0
-  m_Name: levelAsset
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &2051648330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2051648329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b085874b0b7f43b4daf13cf953e64bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SubtitlesController: {fileID: 92310420}
-  RandomDialoguesList: []
-  EventTriggeredDialoguesList:
-  - {fileID: 11400000, guid: 31834d57e523cfc4e9158c12f0fe8374, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  PlayerAudioSource: {fileID: 304367836}
---- !u!4 &2051648331
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2051648329}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.179327, y: 4.2871094, z: -4.526138}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
 --- !u!1 &2063078248
 GameObject:
   m_ObjectHideFlags: 0
@@ -6658,7 +6607,7 @@ Transform:
   - {fileID: 1990896937}
   - {fileID: 273392739}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1 &2078760968
 GameObject:
   m_ObjectHideFlags: 0
@@ -6803,4 +6752,4 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
