@@ -16,7 +16,7 @@ public class DialogueTrigger : MonoBehaviour
     //public static event FinishedPlayingAction OnFinishedPlaying;
 
 
-    const float timeForDisappearing = 5;
+    const float timeForDisappearing = 3;
 
 
     // ReSharper disable once UnusedMember.Local

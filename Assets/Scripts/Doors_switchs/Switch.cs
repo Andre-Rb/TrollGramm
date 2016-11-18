@@ -1,17 +1,34 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
-public class Switch : MonoBehaviour 
+public class Switch : MonoBehaviour
 {
-	public bool bouton = false;
+    public SecondDoor Door;
+    private Renderer rend;
+    private Color _baseColor;
 
-	void OnTriggerEnter(Collider other)
-	{
-		if(other.gameObject.tag == "Player")
-		{
-			bouton = true;
-			transform.position = new Vector3 (transform.position.x, -0.033f, transform.position.z);
-            Renderer rend = GetComponent<Renderer>();
-            rend.material.color = Color.green;
+    void Start()
+    {
+        rend = GetComponent<Renderer>();
+        _baseColor = rend.material.color;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Door.OpenDoor();
         }
-	}
+    }
+
+    public void GoGreen()
+    {
+        rend.material.color = Color.green;
+
+    }
+
+    public void ResetColor()
+    {
+        rend.material.color = _baseColor;
+    }
 }

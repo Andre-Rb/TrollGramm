@@ -4,9 +4,10 @@ using UnityEngine.UI;
 
 public class Player_Manette_Clavier : MonoBehaviour
 {
-    public new GameObject camera = null;
+    public GameObject camera = null;
     public GameObject cameraGameOver = null;
     public Text GameOverText = null;
+    public DialogueTrigger DialogueToPlayAfterRespawn = null;
     public float Speed = 8.0f;
     public float RotationSpeed = 50.0f;
     public Transform NextRespawnTransform;
@@ -133,7 +134,6 @@ public class Player_Manette_Clavier : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && PlayerIsDead)
         {
             Respawning();
-
         }
     }
 
@@ -145,8 +145,13 @@ public class Player_Manette_Clavier : MonoBehaviour
         GameOverText.gameObject.SetActive(false);
         transform.position = NextRespawnTransform.position;
         PlayerIsDead = false;
-
+        if (DialogueToPlayAfterRespawn != null)
+        {
+            DialogueToPlayAfterRespawn.PlayDialogue();
+            DialogueToPlayAfterRespawn = null;
+        }
     }
+
     public void FixedUpdate()
     {
         //CalcForwardVelocity();
