@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
@@ -15,7 +14,7 @@ public class Switch : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == Tags.Player.ToString())
         {
             Door.OpenDoor();
         }
