@@ -3,20 +3,24 @@
 public class DoorDiscoveringKiller : PlayerKiller
 {
     public string DeathMessage;
-    GameObject wallToMakeVanish;
+    public GameObject WallToMakeVanish;
+    public GameObject LightToSwitchOn;
+    public Canvas CanvasToEnable;
 
-    protected override void Start()
+    protected override void SetMessage()
     {
-        base.Start();
+        base.SetMessage();
         text.text = DeathMessage + touchePourRespawnMsg;
     }
 
-    protected override void Respawning()
-
-
+    protected new void OnCollisionEnter(Collision other)
     {
-        base.Respawning();
-        wallToMakeVanish.SetActive(false);
+
+        Debug.Log("Collided with child (well that's sound bad)");
+        base.OnCollisionEnter(other);
+        WallToMakeVanish.SetActive(false);
+        CanvasToEnable.gameObject.SetActive(true); ;
+        LightToSwitchOn.SetActive(true);
     }
 
 

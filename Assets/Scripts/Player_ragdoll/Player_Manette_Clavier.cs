@@ -1,12 +1,15 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Manette_Clavier : MonoBehaviour
 {
     public new GameObject camera = null;
+    public GameObject cameraGameOver = null;
+    public Text GameOverText = null;
     public float Speed = 8.0f;
     public float RotationSpeed = 50.0f;
-
+    public Transform NextRespawnTransform;
     public float JumpHeight = 4.0f;
     public GameObject HeadGameObject;
     public bool showHead;
@@ -22,14 +25,6 @@ public class Player_Manette_Clavier : MonoBehaviour
     {
         get { return _playerIsDead; }
         set { _playerIsDead = value; }
-    }
-
-    private bool _WantsToRespawn;
-
-    public bool WantsToRespawn
-    {
-        get { return _WantsToRespawn; }
-        set { _WantsToRespawn = value; }
     }
 
 
@@ -56,8 +51,8 @@ public class Player_Manette_Clavier : MonoBehaviour
 
     void Move()
     {
-        float moveH = Input.GetAxis("Horizontal")*Speed*Time.deltaTime;
-        float moveV = Input.GetAxis("Vertical")*Speed*Time.deltaTime;
+        float moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
+        float moveV = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
 
 
         if (moveH > 0)
@@ -78,8 +73,8 @@ public class Player_Manette_Clavier : MonoBehaviour
 
     void Rotation()
     {
-        float rotH = Input.GetAxis("XboxleftX")*RotationSpeed*Time.deltaTime;
-        float rotV = Input.GetAxis("XboxleftY")*RotationSpeed*Time.deltaTime;
+        float rotH = Input.GetAxis("XboxleftX") * RotationSpeed * Time.deltaTime;
+        float rotV = Input.GetAxis("XboxleftY") * RotationSpeed * Time.deltaTime;
 
         if (rotV != 0)
         {
@@ -92,14 +87,14 @@ public class Player_Manette_Clavier : MonoBehaviour
         }
 
 
-        Quaternion nextRotation = camera.transform.rotation*Quaternion.Euler(rotH, 0, 0);
+        Quaternion nextRotation = camera.transform.rotation * Quaternion.Euler(rotH, 0, 0);
         if (nextRotation.eulerAngles.x <= 80 || nextRotation.eulerAngles.x >= 280)
             camera.transform.rotation = nextRotation;
     }
 
     void Jump()
     {
-        float jump = Input.GetAxis("Jump")*JumpHeight*Time.deltaTime;
+        float jump = Input.GetAxis("Jump") * JumpHeight * Time.deltaTime;
 
         if (IsGrounded && Math.Abs(jump) > 0.01)
         {
@@ -137,10 +132,21 @@ public class Player_Manette_Clavier : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && PlayerIsDead)
         {
-            WantsToRespawn = true;
+            Respawning();
+
         }
     }
 
+
+    void Respawning()
+    {
+        camera.gameObject.SetActive(true);
+        cameraGameOver.gameObject.SetActive(false);
+        GameOverText.gameObject.SetActive(false);
+        transform.position = NextRespawnTransform.position;
+        PlayerIsDead = false;
+
+    }
     public void FixedUpdate()
     {
         //CalcForwardVelocity();
@@ -150,12 +156,12 @@ public class Player_Manette_Clavier : MonoBehaviour
     }
 
 
-/*void OnCollisionEnter(Collider other)
-                {
-                    if(other.gameObject.tag == "Pacman")
+    /*void OnCollisionEnter(Collider other)
                     {
-                        Destroy (gameObject);
-                        SceneManager.LoadScene ("Game Over");
-                    }
-                }*/
+                        if(other.gameObject.tag == "Pacman")
+                        {
+                            Destroy (gameObject);
+                            SceneManager.LoadScene ("Game Over");
+                        }
+                    }*/
 }
