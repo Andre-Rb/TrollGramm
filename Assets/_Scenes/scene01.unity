@@ -6252,6 +6252,24 @@ Prefab:
       propertyPath: GameOverText
       value: 
       objectReference: {fileID: 463694935}
+    - target: {fileID: 114000013295090084, guid: 09cfe812a5bba214c8a7fc5fccebee37,
+        type: 2}
+      propertyPath: chooseTPS
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013295090084, guid: 09cfe812a5bba214c8a7fc5fccebee37,
+        type: 2}
+      propertyPath: chooseFPS
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010709306400, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012590057532, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}
   m_IsPrefabParent: 0
