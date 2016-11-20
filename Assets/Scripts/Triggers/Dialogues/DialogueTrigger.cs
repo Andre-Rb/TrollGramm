@@ -40,7 +40,8 @@ public class DialogueTrigger : MonoBehaviour
 
     public void PlayDialogue(float f = 0)
     {
-        SubtitlesController.SetActive(true);
+        if (DialogueToPlay.lineText.Length != 0)
+            SubtitlesController.SetActive(true);
 
         PlayerAudioSource.clip = DialogueToPlay.lineclip;
         PlayerAudioSource.Play();
