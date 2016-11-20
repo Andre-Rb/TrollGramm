@@ -16,6 +16,5 @@ public class TorqueTest : MonoBehaviour
     void FixedUpdate()
     {
         GetComponent<Rigidbody>().AddTorque(Vector3.back * 10);
-
     }
 }

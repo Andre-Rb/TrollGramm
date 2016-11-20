@@ -2137,9 +2137,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1b5e4c6f142b342bf1109c7ca09ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 1308714531}
+  PlayerCamera: {fileID: 0}
+  cameraGameOver: {fileID: 0}
+  GameOverText: {fileID: 0}
+  DialogueToPlayAfterRespawn: {fileID: 0}
   Speed: 8
   RotationSpeed: 100
+  NextRespawnTransform: {fileID: 0}
   JumpHeight: 2
   HeadGameObject: {fileID: 0}
   showHead: 0
@@ -2845,7 +2849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094102a4ee0b0f749a8c0b8012c0b8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPlayer: {fileID: 556147131}
+  player: {fileID: 0}
+  ReswpanPointTransform: {fileID: 0}
   cameraGameOver: {fileID: 78777554}
   text: {fileID: 1373421587}
 --- !u!1 &392453538
@@ -7914,6 +7919,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1037512746}
+  - 114: {fileID: 1037512747}
   m_Layer: 0
   m_Name: plan03
   m_TagString: Untagged
@@ -7963,6 +7969,17 @@ Transform:
   - {fileID: 68769498}
   m_Father: {fileID: 1686251216}
   m_RootOrder: 4
+--- !u!114 &1037512747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1037512745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9b5d441f23e2748bab8bb5cf265a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1037512788
 GameObject:
   m_ObjectHideFlags: 0
