@@ -7,7 +7,7 @@ public class Pacman : MonoBehaviour
 
     public float delaiPacman = 10.0f;
     bool wait = false;
-    public Persistance levelInfo;
+     Persistance levelInfo;
 
 
     public Transform player;
