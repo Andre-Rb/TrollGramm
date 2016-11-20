@@ -8,7 +8,7 @@ public class PlayerKiller : MonoBehaviour
 
     public Camera cameraGameOver = null;
     public Text text;
-
+        
     protected string touchePourRespawnMsg;
 
 
