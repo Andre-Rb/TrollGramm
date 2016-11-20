@@ -5,8 +5,8 @@ public class FilterSwitcher : MonoBehaviour
 {
 
 
-    public Camera PlayerCamera;
-
+    Camera _playerCamera;
+    public Player_Manette_Clavier PlayerManetteClavier;
 
     public GameObject redModelCube;
     public GameObject blueModelCube;
@@ -27,7 +27,7 @@ public class FilterSwitcher : MonoBehaviour
         //Debug.Log("Camera culling mask are : " + PlayerCamera.cullingMask);
         //Debug.Log("~8  " + ~8);
 
-
+        _playerCamera = PlayerManetteClavier.PlayerCamera;
 
         redLayerMask = 1 << redModelCube.layer;
         blueLayerMask = 1 << blueModelCube.layer;
@@ -67,19 +67,19 @@ public class FilterSwitcher : MonoBehaviour
     private void RedView()
     {
         SwitchToFilter(Couleur.red);
-        PlayerCamera.cullingMask = ~redLayerMask;
+        _playerCamera.cullingMask = ~redLayerMask;
     }
 
     private void BlueView()
     {
         SwitchToFilter(Couleur.blue);
-        PlayerCamera.cullingMask = ~blueLayerMask;
+        _playerCamera.cullingMask = ~blueLayerMask;
     }
 
-	public void NormalView()
+    public void NormalView()
     {
         SwitchToFilter(Couleur.normal);
-        PlayerCamera.cullingMask = ~redLayerMask & ~blueLayerMask;
+        _playerCamera.cullingMask = ~redLayerMask & ~blueLayerMask;
     }
 
     void SwitchToFilter(Couleur couleur)
