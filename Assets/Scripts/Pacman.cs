@@ -7,7 +7,7 @@ public class Pacman : MonoBehaviour
 
     public float delaiPacman = 10.0f;
     bool wait = false;
-    public Persistance Persistance;
+    public Persistance levelInfo;
 
 
     public Transform player;
@@ -17,7 +17,8 @@ public class Pacman : MonoBehaviour
     {
 
         agent = GetComponent<NavMeshAgent>();
-
+        Debug.Log(FindObjectsOfType<Persistance>().Length);
+        levelInfo = FindObjectOfType<Persistance>();
         StartCoroutine(Wait());
     }
 
@@ -44,8 +45,9 @@ public class Pacman : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            levelInfo.AlreadyDiedScene02 = true;
+
             SceneManager.LoadScene("Scene02");
-            Persistance.AlreadyDiedScene02 = true;
         }
     }
 }

@@ -3,7 +3,8 @@ using System.Collections;
 
 public class ScreamPacman : DialogueTrigger
 {
-    public  ThirdteenthDialogue Dialogue;
+    public ThirdteenthDialogue Dialogue;
+     Persistance Persistance;
 
     protected override void DialogueFinishedPlaying()
     {
@@ -15,6 +16,10 @@ public class ScreamPacman : DialogueTrigger
 
     void Start()
     {
-        PlayDialogue();
+
+        Persistance = FindObjectOfType<Persistance>();
+
+        if (!Persistance.AlreadyDiedScene02)
+            PlayDialogue();
     }
 }
