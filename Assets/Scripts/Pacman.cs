@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Pacman : MonoBehaviour 
 {
@@ -35,6 +36,14 @@ public class Pacman : MonoBehaviour
 			yield return new WaitForSeconds(delaiPacman);
 
 			wait = true;
+		}
+	}
+
+	void OnCollisionEnter	(Collision other)
+	{
+		if (other.gameObject.tag == "Player") 
+		{
+			SceneManager.LoadScene ("Scene02");	
 		}
 	}
 }
