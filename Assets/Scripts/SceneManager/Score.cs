@@ -3,10 +3,19 @@
 public class Score : MonoBehaviour 
 {
 	public GameObject Exit = null;
-	public int scoreMax = 50;
+	public int scoreMax;
+
+    public FourteenDialogue Dialogue;
 
 	int score = 0;
 
+
+
+
+    void Start()
+    {
+        //scoreMax = 70;
+    }
 	void OnTriggerEnter(Collider other)
 	{
 		score++;
@@ -16,6 +25,8 @@ public class Score : MonoBehaviour
 		{
 			gameObject.SetActive (false);
 			Exit.SetActive (true);
-		}
+            Dialogue.PlayDialogue();
+
+        }
 	}
 }

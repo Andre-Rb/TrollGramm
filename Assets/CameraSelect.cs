@@ -12,9 +12,9 @@ public class CameraSelect : MonoBehaviour
     public bool chooseFPS;
     public bool chooseTPS;
 
-
+    public Canvas Canvas;
     
-    void Start()
+    void Awake()
     {
 
         _playerManetteClavier = GetComponent<Player_Manette_Clavier>();
@@ -25,11 +25,14 @@ public class CameraSelect : MonoBehaviour
         {
             _playerManetteClavier.PlayerCamera = FPSCamera;
             FPSCamera.gameObject.SetActive(true);
+            Canvas.worldCamera = FPSCamera;
 
         } else if (chooseTPS)
         {
             _playerManetteClavier.PlayerCamera = TPSCamera;
             TPSCamera.gameObject.SetActive(true);
+            Canvas.worldCamera = TPSCamera;
+
 
 
         }

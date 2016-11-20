@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Player_Manette_Clavier : MonoBehaviour
 {
-    public Camera PlayerCamera = null;
+    public Camera PlayerCamera;
     public GameObject cameraGameOver = null;
     public Text GameOverText = null;
     public DialogueTrigger DialogueToPlayAfterRespawn = null;
