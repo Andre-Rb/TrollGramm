@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7296a1a9688eee449841b0c2b6b3b12f, type: 3}
-  m_Name: Scene1-8
+  m_Name: Scene1-10
   m_EditorClassIdentifier: 
-  lineText: ' c''est le bon. der pour le code. Allez devant les boutons et je vous
-    dis si c''est le bon. '
+  lineText: "(Rire \xE9touff\xE9 apr\xE8s avoir approch\xE9 tous les boutons) Pardon,
+    c'\xE9tait super dr\xF4le "
   speaker: 
-  lineclip: {fileID: 8300000, guid: 19d1371e1db807f429fa757bb67912ee, type: 3}
+  lineclip: {fileID: 8300000, guid: cf6b6b97b3090ea428ce7fd800fdf4ca, type: 3}

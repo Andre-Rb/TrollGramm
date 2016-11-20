@@ -2,7 +2,6 @@
 
 public class Switch : MonoBehaviour
 {
-    public SecondDoor Door;
     private Renderer rend;
     private Color _baseColor;
 
@@ -12,21 +11,15 @@ public class Switch : MonoBehaviour
         _baseColor = rend.material.color;
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == Tags.Player.ToString())
-        {
-            Door.OpenDoor();
-        }
-    }
+   
 
-    public void GoGreen()
+    protected internal void GoGreen()
     {
         rend.material.color = Color.green;
 
     }
 
-    public void ResetColor()
+    protected internal void ResetColor()
     {
         rend.material.color = _baseColor;
     }
