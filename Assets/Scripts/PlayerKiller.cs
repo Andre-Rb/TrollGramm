@@ -32,7 +32,7 @@ public class PlayerKiller : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("A player just collided with : " + gameObject.name);
-            player.camera.gameObject.SetActive(false);
+            player.PlayerCamera.gameObject.SetActive(false);
             cameraGameOver.gameObject.SetActive(true);
             text.gameObject.SetActive(true);
             player.PlayerIsDead = true;

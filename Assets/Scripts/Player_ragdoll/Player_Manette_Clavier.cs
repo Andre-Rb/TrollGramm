@@ -4,14 +4,14 @@ using UnityEngine.UI;
 
 public class Player_Manette_Clavier : MonoBehaviour
 {
-    public GameObject camera = null;
+    public Camera PlayerCamera = null;
     public GameObject cameraGameOver = null;
     public Text GameOverText = null;
     public DialogueTrigger DialogueToPlayAfterRespawn = null;
     public float Speed = 8.0f;
     public float RotationSpeed = 50.0f;
     public Transform NextRespawnTransform;
-    public float JumpHeight = 4.0f;
+    public float JumpHeight;
     public GameObject HeadGameObject;
     public bool showHead;
 
@@ -47,6 +47,8 @@ public class Player_Manette_Clavier : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
+
+        JumpHeight = 300f;
     }
 
 
@@ -88,9 +90,9 @@ public class Player_Manette_Clavier : MonoBehaviour
         }
 
 
-        Quaternion nextRotation = camera.transform.rotation * Quaternion.Euler(rotH, 0, 0);
+        Quaternion nextRotation = PlayerCamera.transform.rotation * Quaternion.Euler(rotH, 0, 0);
         if (nextRotation.eulerAngles.x <= 80 || nextRotation.eulerAngles.x >= 280)
-            camera.transform.rotation = nextRotation;
+            PlayerCamera.transform.rotation = nextRotation;
     }
 
     void Jump()
@@ -140,7 +142,7 @@ public class Player_Manette_Clavier : MonoBehaviour
 
     void Respawning()
     {
-        camera.gameObject.SetActive(true);
+        PlayerCamera.gameObject.SetActive(true);
         cameraGameOver.gameObject.SetActive(false);
         GameOverText.gameObject.SetActive(false);
         transform.position = NextRespawnTransform.position;
