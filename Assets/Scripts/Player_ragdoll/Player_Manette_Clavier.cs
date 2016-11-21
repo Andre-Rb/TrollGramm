@@ -19,7 +19,7 @@ public class Player_Manette_Clavier : MonoBehaviour
 
     private float forwardVelocity;
 
-    private Animator _animator;
+    protected Animator _animator;
     private bool _playerIsDead;
 
     public bool PlayerIsDead
@@ -43,7 +43,7 @@ public class Player_Manette_Clavier : MonoBehaviour
 
 
     // ReSharper disable once UnusedMember.Local
-    void Start()
+    protected void Start()
     {
         rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
@@ -52,7 +52,7 @@ public class Player_Manette_Clavier : MonoBehaviour
     }
 
 
-    void Move()
+    protected virtual void  Move()
     {
         float moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
         float moveV = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
@@ -61,8 +61,7 @@ public class Player_Manette_Clavier : MonoBehaviour
         if (moveH > 0)
             moveH *= 2;
         transform.Translate(new Vector3(moveH, 0, moveV));
-        //rb.AddForce(transform.right * moveH * 4000);
-        //rb.AddForce(transform.forward * moveV * 4000);
+
 
         _animator.SetBool(CharacterAnimatorState.isMoving.ToString(), (Math.Abs(moveV) + Math.Abs(moveH)) > 0);
 
@@ -74,7 +73,7 @@ public class Player_Manette_Clavier : MonoBehaviour
         _animator.SetFloat(CharacterAnimatorState.YWalking.ToString(), Input.GetAxis("Horizontal"));
     }
 
-    void Rotation()
+    protected virtual void Rotation()
     {
         float rotH = Input.GetAxis("XboxleftX") * RotationSpeed * Time.deltaTime;
         float rotV = Input.GetAxis("XboxleftY") * RotationSpeed * Time.deltaTime;
@@ -95,7 +94,7 @@ public class Player_Manette_Clavier : MonoBehaviour
             PlayerCamera.transform.rotation = nextRotation;
     }
 
-    void Jump()
+    protected void Jump()
     {
         float jump = Input.GetAxis("Jump") * JumpHeight * Time.deltaTime;
 
@@ -108,14 +107,14 @@ public class Player_Manette_Clavier : MonoBehaviour
     }
 
     // ReSharper disable once UnusedMember.Local
-    void OnCollisionStay(Collision other)
+    protected void OnCollisionStay(Collision other)
     {
         if (other.gameObject.tag == Tags.Ground.ToString())
             IsGrounded = true;
     }
 
     // ReSharper disable once UnusedMember.Local
-    void OnCollisionExit(Collision other)
+    protected void OnCollisionExit(Collision other)
     {
         if (other.gameObject.tag == Tags.Ground.ToString())
             IsGrounded = false;
