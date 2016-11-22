@@ -61,9 +61,9 @@ public class PlayerController3D : PlayerControllerBase
         }
 
 
-        Quaternion nextRotation = PlayerCamera.transform.rotation*Quaternion.Euler(rotH, 0, 0);
+        Quaternion nextRotation = PlayerCameraAutoSelected.transform.rotation*Quaternion.Euler(rotH, 0, 0);
         if (nextRotation.eulerAngles.x <= 80 || nextRotation.eulerAngles.x >= 280)
-            PlayerCamera.transform.rotation = nextRotation;
+            PlayerCameraAutoSelected.transform.rotation = nextRotation;
     }
 
 
@@ -79,7 +79,7 @@ public class PlayerController3D : PlayerControllerBase
 
     void Respawning()
     {
-        PlayerCamera.gameObject.SetActive(true);
+        PlayerCameraAutoSelected.gameObject.SetActive(true);
         CameraGameOver.gameObject.SetActive(false);
         GameOverText.gameObject.SetActive(false);
         transform.position = NextRespawnTransform.position;

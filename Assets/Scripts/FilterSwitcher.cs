@@ -20,11 +20,11 @@ public class FilterSwitcher : MonoBehaviour
     private int neitherLayerMask;
     void Start()
     {
-        //Debug.Log("Camera culling mask are : " + PlayerCamera.cullingMask);
+        //Debug.Log("Camera culling mask are : " + PlayerCamera_AutoSelected.cullingMask);
         //Debug.Log("Blue culling mask are : " + redModelCube.layer);
         //Debug.Log("Red culling mask are : " + blueModelCube.layer);
-        ////PlayerCamera.cullingMask = 8;
-        //Debug.Log("Camera culling mask are : " + PlayerCamera.cullingMask);
+        ////PlayerCamera_AutoSelected.cullingMask = 8;
+        //Debug.Log("Camera culling mask are : " + PlayerCamera_AutoSelected.cullingMask);
         //Debug.Log("~8  " + ~8);
 
         _playerCamera = PlayerController3D.GetCamera();

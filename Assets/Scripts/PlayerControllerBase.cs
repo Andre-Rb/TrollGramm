@@ -2,18 +2,18 @@
 using UnityEngine;
 
 // ReSharper disable once CheckNamespace
-public abstract class  PlayerControllerBase : MonoBehaviour
+public abstract class PlayerControllerBase : MonoBehaviour
 {
-
-    protected Camera PlayerCamera;
-    public float Speed = 8.0f;
-    protected Animator Animator;
+    [SerializeField] protected Camera PlayerCameraAutoSelected;
+    [SerializeField] protected float Speed;
+   protected Animator Animator;
 
     // ReSharper disable once InconsistentNaming
-    protected bool playerIsDead;
+    [SerializeField] protected bool playerIsDead;
     protected Rigidbody Rb;
-    public float JumpHeight;
-    private bool _isGrounded;
+    [SerializeField] protected float JumpHeight;
+
+    [SerializeField] private bool _isGrounded;
 
     protected bool IsGrounded
     {
@@ -41,22 +41,21 @@ public abstract class  PlayerControllerBase : MonoBehaviour
     }
 
 
-
     public void SetCamera(Camera c)
     {
-        PlayerCamera = c;
+        PlayerCameraAutoSelected = c;
     }
 
     public Camera GetCamera()
     {
-        return PlayerCamera;
+        return PlayerCameraAutoSelected;
     }
 
 
     // ReSharper disable once UnusedMember.Local
     protected void Jump()
     {
-        float jump = Input.GetAxis("Jump") * JumpHeight * Time.deltaTime;
+        float jump = Input.GetAxis("Jump")*JumpHeight*Time.deltaTime;
 
         if (IsGrounded && Math.Abs(jump) > 0.01)
         {
@@ -80,5 +79,4 @@ public abstract class  PlayerControllerBase : MonoBehaviour
         if (other.gameObject.tag == Tags.Ground.ToString())
             IsGrounded = false;
     }
-
 }

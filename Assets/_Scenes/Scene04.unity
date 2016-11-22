@@ -2153,15 +2153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a0e35152328624ba10488550deab91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraGameOver: {fileID: 0}
-  GameOverText: {fileID: 0}
-  DialogueToPlayAfterRespawn: {fileID: 0}
+  PlayerCamera: {fileID: 0}
   Speed: 8
-  RotationSpeed: 50
-  NextRespawnTransform: {fileID: 0}
+  playerIsDead: 0
   JumpHeight: 0
-  HeadGameObject: {fileID: 0}
-  showHead: 0
+  _isGrounded: 0
 --- !u!114 &252336565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2174,15 +2170,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1b5e4c6f142b342bf1109c7ca09ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraGameOver: {fileID: 0}
+  PlayerCamera: {fileID: 0}
+  Speed: 8
+  playerIsDead: 0
+  JumpHeight: 2
+  _isGrounded: 0
+  CameraGameOver: {fileID: 0}
   GameOverText: {fileID: 0}
   DialogueToPlayAfterRespawn: {fileID: 0}
-  Speed: 8
   RotationSpeed: 100
   NextRespawnTransform: {fileID: 0}
-  JumpHeight: 2
-  HeadGameObject: {fileID: 0}
-  showHead: 0
 --- !u!114 &252336566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19851,6 +19848,11 @@ Prefab:
     - target: {fileID: 1000012079268760, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}
       propertyPath: m_Name
       value: 'Player '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014193348018, guid: 09cfe812a5bba214c8a7fc5fccebee37,
+        type: 2}
+      propertyPath: JumpHeight
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}
