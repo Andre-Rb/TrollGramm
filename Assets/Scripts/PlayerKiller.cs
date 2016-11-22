@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class PlayerKiller : MonoBehaviour
 {
-    public Player_Manette_Clavier player;
+    public PlayerController3D player;
     public Transform ReswpanPointTransform;
 
     public Camera cameraGameOver = null;
@@ -32,7 +32,7 @@ public class PlayerKiller : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("A player just collided with : " + gameObject.name);
-            player.PlayerCamera.gameObject.SetActive(false);
+            player.GetCamera().gameObject.SetActive(false);
             cameraGameOver.gameObject.SetActive(true);
             text.gameObject.SetActive(true);
             player.PlayerIsDead = true;

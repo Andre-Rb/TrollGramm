@@ -2153,7 +2153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a0e35152328624ba10488550deab91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCamera: {fileID: 0}
   cameraGameOver: {fileID: 0}
   GameOverText: {fileID: 0}
   DialogueToPlayAfterRespawn: {fileID: 0}
@@ -2175,7 +2174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1b5e4c6f142b342bf1109c7ca09ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCamera: {fileID: 0}
   cameraGameOver: {fileID: 0}
   GameOverText: {fileID: 0}
   DialogueToPlayAfterRespawn: {fileID: 0}
@@ -19853,26 +19851,6 @@ Prefab:
     - target: {fileID: 1000012079268760, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}
       propertyPath: m_Name
       value: 'Player '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013295090084, guid: 09cfe812a5bba214c8a7fc5fccebee37,
-        type: 2}
-      propertyPath: chooseFPS
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013295090084, guid: 09cfe812a5bba214c8a7fc5fccebee37,
-        type: 2}
-      propertyPath: choose2D
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013500410664, guid: 09cfe812a5bba214c8a7fc5fccebee37,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000014193348018, guid: 09cfe812a5bba214c8a7fc5fccebee37,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}

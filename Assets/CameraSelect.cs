@@ -1,57 +1,57 @@
 ﻿using UnityEngine;
-using System.Collections;
 
+// ReSharper disable once CheckNamespace
 public class CameraSelect : MonoBehaviour
 {
-
     public Camera FPSCamera;
     public Camera TPSCamera;
     public Camera Camera2D;
 
-    private Player_Manette_Clavier _playerManetteClavier;
+    public PlayerControllerBase PlayerControllerBase;
 
-    public bool chooseFPS;
-    public bool chooseTPS;
-    public bool choose2D;
+    public bool ChooseFPS;
+    public bool ChooseTPS;
+    public bool Choose2D;
 
-    public Canvas Canvas;
+    //public Canvas Canvas;
 
-    void Awake()
+    // ReSharper disable once UnusedMember.Local
+    void Start()
     {
+        if (FPSCamera != null)
+            FPSCamera.gameObject.SetActive(false);
+        if (TPSCamera != null)
+            TPSCamera.gameObject.SetActive(false);
+        if (Camera2D != null)
+            Camera2D.gameObject.SetActive(false);
 
-        _playerManetteClavier = GetComponent<Player_Manette_Clavier>();
-        FPSCamera.gameObject.SetActive(false);
-        TPSCamera.gameObject.SetActive(false);
-
-        if (chooseFPS)
+        if (ChooseFPS)
         {
-            _playerManetteClavier.PlayerCamera = FPSCamera;
-            FPSCamera.gameObject.SetActive(true);
-            Canvas.worldCamera = FPSCamera;
-
+            PlayerControllerBase.SetCamera(FPSCamera);
+            if (FPSCamera != null) FPSCamera.gameObject.SetActive(true);
+            else
+                throw new UnityException("You have to assign a FPSCamera");
+            //Canvas.worldCamera = FPSCamera;
         }
-        else if (chooseTPS)
+        else if (ChooseTPS)
         {
-            _playerManetteClavier.PlayerCamera = TPSCamera;
-            TPSCamera.gameObject.SetActive(true);
-            Canvas.worldCamera = TPSCamera;
-
-
-
+            PlayerControllerBase.SetCamera(TPSCamera);
+            if (TPSCamera != null) TPSCamera.gameObject.SetActive(true);
+            else
+                throw new UnityException("You have to assign a TPSCamera");
+            //Canvas.worldCamera = TPSCamera;
         }
-        else if (choose2D)
+        else if (Choose2D)
         {
-            _playerManetteClavier.PlayerCamera = Camera2D;
-            Camera2D.gameObject.SetActive(true);
-            Canvas.worldCamera = Camera2D;
-
-
-
+            PlayerControllerBase.SetCamera(Camera2D);
+            if (Camera2D != null) Camera2D.gameObject.SetActive(true);
+            else
+                throw new UnityException("You have to assign a Camera2D");
+            //Canvas.worldCamera = Camera2D;
         }
         else
         {
             throw new UnityException("You have to choose a camerafor the player");
         }
     }
-
 }

@@ -6,7 +6,7 @@ public class FilterSwitcher : MonoBehaviour
 
 
     Camera _playerCamera;
-    public Player_Manette_Clavier PlayerManetteClavier;
+    public PlayerController3D PlayerController3D;
 
     public GameObject redModelCube;
     public GameObject blueModelCube;
@@ -27,7 +27,7 @@ public class FilterSwitcher : MonoBehaviour
         //Debug.Log("Camera culling mask are : " + PlayerCamera.cullingMask);
         //Debug.Log("~8  " + ~8);
 
-        _playerCamera = PlayerManetteClavier.PlayerCamera;
+        _playerCamera = PlayerController3D.GetCamera();
 
         redLayerMask = 1 << redModelCube.layer;
         blueLayerMask = 1 << blueModelCube.layer;

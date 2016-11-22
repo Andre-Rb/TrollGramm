@@ -659,11 +659,11 @@ GameObject:
   - 54: {fileID: 54000013788113812}
   - 136: {fileID: 136000013615681806}
   - 114: {fileID: 114000013861778342}
-  - 114: {fileID: 114000013500410664}
   - 81: {fileID: 81000011572463220}
   - 82: {fileID: 82000011364537304}
   - 114: {fileID: 114000013295090084}
   - 114: {fileID: 114000014193348018}
+  - 114: {fileID: 114000012188742206}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -808,7 +808,7 @@ GameObject:
   - 92: {fileID: 92000012309504160}
   - 81: {fileID: 81000013242421252}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: 2DCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2617,6 +2617,26 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000012188742206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012079268760}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c1b5e4c6f142b342bf1109c7ca09ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraGameOver: {fileID: 0}
+  GameOverText: {fileID: 0}
+  DialogueToPlayAfterRespawn: {fileID: 0}
+  Speed: 8
+  RotationSpeed: 50
+  NextRespawnTransform: {fileID: 0}
+  JumpHeight: 0
+  HeadGameObject: {fileID: 0}
+  showHead: 0
 --- !u!114 &114000013295090084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2630,33 +2650,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPSCamera: {fileID: 20000012825928968}
   TPSCamera: {fileID: 20000010185977406}
-  Camera2D: {fileID: 0}
-  chooseFPS: 1
+  Camera2D: {fileID: 20000012826098256}
+  chooseFPS: 0
   chooseTPS: 0
-  choose2D: 0
-  Canvas: {fileID: 0}
---- !u!114 &114000013500410664
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012079268760}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c1b5e4c6f142b342bf1109c7ca09ec3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerCamera: {fileID: 0}
-  cameraGameOver: {fileID: 1000013908739318, guid: d2cc4b56da1677d4abde110eab58f028,
-    type: 2}
-  GameOverText: {fileID: 0}
-  DialogueToPlayAfterRespawn: {fileID: 0}
-  Speed: 5
-  RotationSpeed: 250
-  NextRespawnTransform: {fileID: 0}
-  JumpHeight: 0
-  HeadGameObject: {fileID: 0}
-  showHead: 0
+  choose2D: 1
 --- !u!114 &114000013861778342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2682,9 +2679,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a0e35152328624ba10488550deab91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraGameOver: {fileID: 0}
+  GameOverText: {fileID: 0}
+  DialogueToPlayAfterRespawn: {fileID: 0}
   Speed: 8
   RotationSpeed: 50
+  NextRespawnTransform: {fileID: 0}
   JumpHeight: 4
+  HeadGameObject: {fileID: 0}
+  showHead: 0
 --- !u!124 &124000012535935430
 Behaviour:
   m_ObjectHideFlags: 1
