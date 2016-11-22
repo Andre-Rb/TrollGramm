@@ -147,7 +147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000010744689782
 GameObject:
   m_ObjectHideFlags: 1
@@ -2191,8 +2191,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012079268760}
-  m_LocalRotation: {x: -0, y: -0.70710707, z: -0, w: 0.70710653}
-  m_LocalPosition: {x: 16.962778, y: 1.71, z: -6.36}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 24.1, y: 0.010999918, z: 1.125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
   m_Children:
@@ -2623,20 +2623,18 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012079268760}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c1b5e4c6f142b342bf1109c7ca09ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraGameOver: {fileID: 0}
-  GameOverText: {fileID: 0}
-  DialogueToPlayAfterRespawn: {fileID: 0}
+  PlayerCameraAutoSelected: {fileID: 0}
   Speed: 8
-  RotationSpeed: 50
-  NextRespawnTransform: {fileID: 0}
   JumpHeight: 0
-  HeadGameObject: {fileID: 0}
-  showHead: 0
+  CameraGameOver: {fileID: 1000013908739318, guid: d2cc4b56da1677d4abde110eab58f028,
+    type: 2}
+  GameOverText: {fileID: 0}
+  RotationSpeed: 200
 --- !u!114 &114000013295090084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2651,9 +2649,10 @@ MonoBehaviour:
   FPSCamera: {fileID: 20000012825928968}
   TPSCamera: {fileID: 20000010185977406}
   Camera2D: {fileID: 20000012826098256}
-  chooseFPS: 0
-  chooseTPS: 0
-  choose2D: 1
+  PlayerControllerBase: {fileID: 114000012188742206}
+  ChooseFPS: 1
+  ChooseTPS: 0
+  Choose2D: 0
 --- !u!114 &114000013861778342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2674,20 +2673,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012079268760}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69a0e35152328624ba10488550deab91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraGameOver: {fileID: 0}
-  GameOverText: {fileID: 0}
-  DialogueToPlayAfterRespawn: {fileID: 0}
+  PlayerCameraAutoSelected: {fileID: 0}
   Speed: 8
-  RotationSpeed: 50
-  NextRespawnTransform: {fileID: 0}
-  JumpHeight: 4
-  HeadGameObject: {fileID: 0}
-  showHead: 0
+  JumpHeight: 250
 --- !u!124 &124000012535935430
 Behaviour:
   m_ObjectHideFlags: 1

@@ -10,10 +10,8 @@ public class PlayerController2D : PlayerControllerBase
 
     protected void Move()
     {
-        float moveH = Input.GetAxis("Vertical")*Speed*Time.deltaTime;
-
-        if (moveH > 0)
-            moveH *= 2;
+        float moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
+        Debug.Log("moveH : " + moveH);
 
         Animator.SetBool(CharacterAnimatorState.isMoving.ToString(), ( /*Math.Abs(moveV) +*/ Math.Abs(moveH)) > 0);
 
@@ -23,4 +21,15 @@ public class PlayerController2D : PlayerControllerBase
         Animator.SetFloat(CharacterAnimatorState.XWalking.ToString(), Input.GetAxis("Vertical"));
         Animator.SetFloat(CharacterAnimatorState.YWalking.ToString(), Input.GetAxis("Horizontal"));
     }
+
+    // ReSharper disable once UnusedMember.Local
+    private void FixedUpdate()
+    {
+        Move();
+        Jump();
+    }
+
+
+
+
 }

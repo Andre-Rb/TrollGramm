@@ -8,11 +8,18 @@ public class PlayerKiller : MonoBehaviour
 
     public Camera cameraGameOver = null;
     public Text text;
-        
+
     protected string touchePourRespawnMsg;
 
 
-
+    // ReSharper disable once UnusedMember.Local
+    void Start()
+    {
+        if (player == null)
+        {
+            throw new UnityException("You have to provide a PlayerController3D to " + GetType().Name);
+        }
+    }
     protected virtual void SetMessage()
     {
         touchePourRespawnMsg = "\nAppuie sur " + "TODO" + " pour respawn.";
@@ -43,5 +50,5 @@ public class PlayerKiller : MonoBehaviour
 
 
 
-  
+
 }

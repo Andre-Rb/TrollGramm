@@ -5,13 +5,37 @@ using UnityEngine.UI;
 // ReSharper disable once CheckNamespace
 public class PlayerController3D : PlayerControllerBase
 {
-    public GameObject CameraGameOver = null;
-    public Text GameOverText = null;
-    public DialogueTrigger DialogueToPlayAfterRespawn;
+    [SerializeField]
+    float dragAirborn = 5;
+
+    [SerializeField]
+    float dragOnGround = 50;
+
+    public GameObject CameraGameOver;
+    public Text GameOverText;
+    DialogueTrigger _dialogueToPlayAfterRespawn;
     public float RotationSpeed = 50.0f;
-    public Transform NextRespawnTransform;
+    Transform _nextRespawnTransform;
+
+    public Transform NextRespawnTransform
+    {
+        get { return _nextRespawnTransform; }
+        set { _nextRespawnTransform = value; }
+    }
+
+    public DialogueTrigger DialogueToPlayAfterRespawn
+    {
+        get { return _dialogueToPlayAfterRespawn; }
+        set { _dialogueToPlayAfterRespawn = value; }
+    }
+
     //private float forwardVelocity;
 
+    // ReSharper disable once UnusedMember.Local
+    void Start()
+    {
+        NextRespawnTransform = null;
+    }
 
     public void Update()
     {
@@ -25,17 +49,25 @@ public class PlayerController3D : PlayerControllerBase
     // ReSharper disable once UnusedMember.Local
     void Move()
     {
-        float moveH = Input.GetAxis("Horizontal")*Speed*Time.deltaTime;
-        float moveV = Input.GetAxis("Vertical")*Speed*Time.deltaTime;
+
+        float moveH = 0;
+        if (IsGrounded)
+        {
+            moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
+        }
+        float moveV = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
+        if (!IsGrounded)
+            moveV *= 0.3f;
+
+        if (Input.GetAxis("Vertical") > 0.9)
+            moveV *= 1.5f;
+
+        Debug.Log("MoveH = " + moveH + " moveV = " + moveV);
+        Rb.AddForce(transform.right * moveH);
+        Rb.AddForce(transform.forward * moveV);
 
 
-        if (moveH > 0)
-            moveH *= 2;
-        transform.Translate(new Vector3(moveH, 0, moveV));
-
-
-        Animator.SetBool(CharacterAnimatorState.isMoving.ToString(), (Math.Abs(moveV) + Math.Abs(moveH)) > 0);
-
+        Animator.SetBool(CharacterAnimatorState.isMoving.ToString(), Math.Abs(moveV) + Math.Abs(moveH) > 0);
 
         Animator.SetBool(CharacterAnimatorState.isWalkingStraight.ToString(), Input.GetAxis("Vertical") > 0);
         Animator.SetBool(CharacterAnimatorState.isStraffing.ToString(), Math.Abs(Input.GetAxis("Horizontal")) > 0);
@@ -46,8 +78,8 @@ public class PlayerController3D : PlayerControllerBase
 
     void Rotation()
     {
-        float rotH = Input.GetAxis("XboxleftX")*RotationSpeed*Time.deltaTime;
-        float rotV = Input.GetAxis("XboxleftY")*RotationSpeed*Time.deltaTime;
+        float rotH = Input.GetAxis("XboxleftX") * RotationSpeed * Time.deltaTime;
+        float rotV = Input.GetAxis("XboxleftY") * RotationSpeed * Time.deltaTime;
 
         // ReSharper disable once CompareOfFloatsByEqualityOperator
         if (rotV != 0)
@@ -61,7 +93,7 @@ public class PlayerController3D : PlayerControllerBase
         }
 
 
-        Quaternion nextRotation = PlayerCameraAutoSelected.transform.rotation*Quaternion.Euler(rotH, 0, 0);
+        Quaternion nextRotation = PlayerCameraAutoSelected.transform.rotation * Quaternion.Euler(rotH, 0, 0);
         if (nextRotation.eulerAngles.x <= 80 || nextRotation.eulerAngles.x >= 280)
             PlayerCameraAutoSelected.transform.rotation = nextRotation;
     }
@@ -97,5 +129,12 @@ public class PlayerController3D : PlayerControllerBase
         Move();
         Rotation();
         Jump();
+
+        ChangeDrag();
+    }
+
+    private void ChangeDrag()
+    {
+        Rb.drag = IsGrounded ? dragOnGround : dragAirborn;
     }
 }

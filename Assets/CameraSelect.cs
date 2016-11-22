@@ -16,7 +16,7 @@ public class CameraSelect : MonoBehaviour
     //public Canvas Canvas;
 
     // ReSharper disable once UnusedMember.Local
-    void Start()
+    void Awake()
     {
         if (FPSCamera != null)
             FPSCamera.gameObject.SetActive(false);
