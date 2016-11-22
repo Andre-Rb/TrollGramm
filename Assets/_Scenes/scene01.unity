@@ -6064,43 +6064,6 @@ Prefab:
       propertyPath: GameOverText
       value: 
       objectReference: {fileID: 463694935}
-    - target: {fileID: 114000012188742206, guid: 09cfe812a5bba214c8a7fc5fccebee37,
-        type: 2}
-      propertyPath: JumpHeight
-      value: 150000
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012188742206, guid: 09cfe812a5bba214c8a7fc5fccebee37,
-        type: 2}
-      propertyPath: dragAirborn
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012188742206, guid: 09cfe812a5bba214c8a7fc5fccebee37,
-        type: 2}
-      propertyPath: dragOnGround
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012188742206, guid: 09cfe812a5bba214c8a7fc5fccebee37,
-        type: 2}
-      propertyPath: Speed
-      value: 20000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013669846962, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013669846962, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013669846962, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 137000011580760762, guid: 09cfe812a5bba214c8a7fc5fccebee37,
-        type: 2}
-      propertyPath: m_CastShadows
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09cfe812a5bba214c8a7fc5fccebee37, type: 2}
   m_IsPrefabParent: 0
