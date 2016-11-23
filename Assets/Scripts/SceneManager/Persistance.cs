@@ -1,20 +1,25 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Persistance : MonoBehaviour
 {
-    static Persistance instance;
+    Persistance instance;
 
-    public  bool AlreadyDiedScene02;
+    public bool AlreadyDiedScene02;
     void Awake()
     {
-        if (instance == null)
+        if (SceneManager.GetActiveScene().name == "Scene02")
         {
-            DontDestroyOnLoad(gameObject);
-            instance = this;
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
+
+            if (instance == null)
+            {
+                DontDestroyOnLoad(gameObject);
+                instance = this;
+            }
+            else if (instance != this)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
