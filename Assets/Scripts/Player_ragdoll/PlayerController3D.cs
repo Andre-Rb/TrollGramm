@@ -6,29 +6,12 @@ using UnityEngine.UI;
 // ReSharper disable once CheckNamespace
 public class PlayerController3D : PlayerControllerBase
 {
-    [SerializeField]
-    float dragAirborn = 5;
-
-    [SerializeField]
-    float dragOnGround = 50;
+ 
 
     public GameObject CameraGameOver;
     public Text GameOverText;
-    DialogueTrigger _dialogueToPlayAfterRespawn;
     public float RotationSpeed = 50.0f;
-    Transform _nextRespawnTransform;
-
-    public Transform NextRespawnTransform
-    {
-        get { return _nextRespawnTransform; }
-        set { _nextRespawnTransform = value; }
-    }
-
-    public DialogueTrigger DialogueToPlayAfterRespawn
-    {
-        get { return _dialogueToPlayAfterRespawn; }
-        set { _dialogueToPlayAfterRespawn = value; }
-    }
+ 
 
     //private float forwardVelocity;
 
@@ -57,8 +40,7 @@ public class PlayerController3D : PlayerControllerBase
                 break;
 
             default:
-                throw new UnityException(GetType().Name +
-                                         " doesnt know this scene, add player controller values in script");
+                throw new UnityException(GetType().Name + " doesnt know this scene, add player controller values in script");
         }
     }
 
@@ -161,8 +143,5 @@ public class PlayerController3D : PlayerControllerBase
 
     }
 
-    private void ChangeDrag()
-    {
-        Rb.drag = IsGrounded ? dragOnGround : dragAirborn;
-    }
+   
 }

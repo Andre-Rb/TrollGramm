@@ -4,6 +4,11 @@ using UnityEngine;
 // ReSharper disable once CheckNamespace
 public abstract class PlayerControllerBase : MonoBehaviour
 {
+    [SerializeField]
+    protected float dragAirborn = 5;
+
+    [SerializeField]
+    protected float dragOnGround = 50;
 
     protected Camera PlayerCameraAutoSelected;
     [SerializeField]
@@ -34,7 +39,20 @@ public abstract class PlayerControllerBase : MonoBehaviour
         set { playerIsDead = value; }
     }
 
+    protected Transform _nextRespawnTransform;
 
+    public Transform NextRespawnTransform
+    {
+        get { return _nextRespawnTransform; }
+        set { _nextRespawnTransform = value; }
+    }
+    protected DialogueTrigger _dialogueToPlayAfterRespawn;
+
+    public DialogueTrigger DialogueToPlayAfterRespawn
+    {
+        get { return _dialogueToPlayAfterRespawn; }
+        set { _dialogueToPlayAfterRespawn = value; }
+    }
     protected void Awake()
     {
         Rb = GetComponent<Rigidbody>();
@@ -64,6 +82,7 @@ public abstract class PlayerControllerBase : MonoBehaviour
             Rb.AddForce(transform.up * jump);
 
             Animator.SetTrigger(CharacterAnimatorState.ForwardJump.ToString());
+            Debug.Log("has jumped");
         }
     }
 
@@ -80,5 +99,10 @@ public abstract class PlayerControllerBase : MonoBehaviour
     {
         if (other.gameObject.tag == Tags.Ground.ToString())
             IsGrounded = false;
+    }
+
+    protected void ChangeDrag()
+    {
+        Rb.drag = IsGrounded ? dragOnGround : dragAirborn;
     }
 }

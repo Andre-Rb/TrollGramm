@@ -1,25 +1,53 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // ReSharper disable once CheckNamespace
 public class PlayerController2D : PlayerControllerBase
 {
+
+
+
+
+    // ReSharper disable once UnusedMember.Local
+    void Start()
+    {
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "Scene04":
+                Speed = 20000;
+                JumpHeight = 150000;
+                dragAirborn = 2;
+                dragOnGround = 5;
+                break;
+
+            default:
+                throw new UnityException(GetType().Name + " doesnt know this scene, add player controller values in script");
+        }
+    }
     protected void Rotation()
     {
     }
 
     protected void Move()
     {
-        float moveH = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
-        Debug.Log("moveH : " + moveH);
 
-        Animator.SetBool(CharacterAnimatorState.isMoving.ToString(), ( /*Math.Abs(moveV) +*/ Math.Abs(moveH)) > 0);
+        float moveV = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
+        if (!IsGrounded)
+            moveV *= 0.3f;
+
+        if (Input.GetAxis("Vertical") > 0.9)
+            moveV *= 1.5f;
+
+        //Debug.Log("MoveH = " + moveH + " moveV = " + moveV);
+        Rb.AddForce(transform.forward * moveV);
+
+
+        Animator.SetBool(CharacterAnimatorState.isMoving.ToString(), ( /*Math.Abs(moveV) +*/ Math.Abs(moveV)) > 0);
 
         Animator.SetBool(CharacterAnimatorState.isWalkingStraight.ToString(), Input.GetAxis("Vertical") > 0);
-        Animator.SetBool(CharacterAnimatorState.isStraffing.ToString(), Math.Abs(Input.GetAxis("Horizontal")) > 0);
 
         Animator.SetFloat(CharacterAnimatorState.XWalking.ToString(), Input.GetAxis("Vertical"));
-        Animator.SetFloat(CharacterAnimatorState.YWalking.ToString(), Input.GetAxis("Horizontal"));
     }
 
     // ReSharper disable once UnusedMember.Local
@@ -27,6 +55,8 @@ public class PlayerController2D : PlayerControllerBase
     {
         Move();
         Jump();
+        ChangeDrag();
+
     }
 
 

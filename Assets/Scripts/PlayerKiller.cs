@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class PlayerKiller : MonoBehaviour
 {
-    public PlayerController3D player;
+    public PlayerControllerBase player;
     public Transform ReswpanPointTransform;
 
     public Camera cameraGameOver = null;
@@ -17,7 +17,7 @@ public class PlayerKiller : MonoBehaviour
     {
         if (player == null)
         {
-            throw new UnityException("You have to provide a PlayerController3D to " + GetType().Name);
+            throw new UnityException("You have to provide a PlayerController to " + GetType().Name);
         }
     }
     protected virtual void SetMessage()
