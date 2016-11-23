@@ -32,8 +32,8 @@ public class FilterSwitcher : MonoBehaviour
         redLayerMask = 1 << redModelCube.layer;
         blueLayerMask = 1 << blueModelCube.layer;
         neitherLayerMask = redModelCube.layer + redModelCube.layer;
-        Debug.Log("Neither culling mask are : " + neitherLayerMask);
-        Debug.Log("Neither culling mask are : " + neitherLayerMask);
+        //Debug.Log("Neither culling mask are : " + neitherLayerMask);
+        //Debug.Log("Neither culling mask are : " + neitherLayerMask);
 
 
         _listFilters = new List<GameObject>
@@ -88,7 +88,7 @@ public class FilterSwitcher : MonoBehaviour
         foreach (GameObject listFilter in _listFilters)
         {
             listFilter.SetActive(false);
-            Debug.Log(listFilter.name);
+            //Debug.Log(listFilter.name);
         }
         switch (couleur)
         {

@@ -62,7 +62,7 @@ public class PlayerController3D : PlayerControllerBase
         if (Input.GetAxis("Vertical") > 0.9)
             moveV *= 1.5f;
 
-        Debug.Log("MoveH = " + moveH + " moveV = " + moveV);
+        //Debug.Log("MoveH = " + moveH + " moveV = " + moveV);
         Rb.AddForce(transform.right * moveH);
         Rb.AddForce(transform.forward * moveV);
 
