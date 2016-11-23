@@ -14,4 +14,4 @@ MonoBehaviour:
   lineText: "Non non ne quittez pas ! J'ai besoin de vous. Quoi que, vous n'avez pas
     l'air tr\xE8s entra\xEEn\xE9 ...  "
   speaker: 
-  lineclip: {fileID: 8300000, guid: cedd45dac102aee47a3014f2cbeb1ab1, type: 3}
+  lineclip: {fileID: 8300000, guid: ac48e88f5a5155446ab0b1f39bc8a603, type: 3}
