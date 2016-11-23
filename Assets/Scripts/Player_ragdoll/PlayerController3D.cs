@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 // ReSharper disable once CheckNamespace
@@ -35,6 +36,30 @@ public class PlayerController3D : PlayerControllerBase
     void Start()
     {
         NextRespawnTransform = null;
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "Scene01":
+                Speed = 20000;
+                RotationSpeed = 200;
+                JumpHeight = 150000;
+                break;
+
+            case "Scene02":
+                Speed = 60000;
+                RotationSpeed = 300;
+                JumpHeight = 150000;
+                break;
+
+            case "Scene03":
+                Speed = 30000;
+                RotationSpeed = 200;
+                JumpHeight = 250000;
+                break;
+
+            default:
+                throw new UnityException(GetType().Name +
+                                         " doesnt know this scene, add player controller values in script");
+        }
     }
 
     public void Update()
@@ -49,7 +74,6 @@ public class PlayerController3D : PlayerControllerBase
     // ReSharper disable once UnusedMember.Local
     void Move()
     {
-
         float moveH = 0;
         if (IsGrounded)
         {
