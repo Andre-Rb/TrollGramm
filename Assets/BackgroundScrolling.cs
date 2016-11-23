@@ -39,6 +39,6 @@ public class BackgroundScrolling : MonoBehaviour
     //}
     public void GenerateANewSkyPlan()
     {
-     //Instantiate()
+         //Instantiate()
     }
 }

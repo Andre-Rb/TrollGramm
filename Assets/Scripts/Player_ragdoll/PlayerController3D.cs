@@ -38,6 +38,11 @@ public class PlayerController3D : PlayerControllerBase
                 RotationSpeed = 200;
                 JumpHeight = 250000;
                 break;
+            case "Scene05":
+                Speed = 20000;
+                RotationSpeed = 200;
+                JumpHeight = 150000;
+                break;
 
             default:
                 throw new UnityException(GetType().Name + " doesnt know this scene, add player controller values in script");
