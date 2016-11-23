@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7296a1a9688eee449841b0c2b6b3b12f, type: 3}
   m_Name: Scene4-23
   m_EditorClassIdentifier: 
-  lineText: 'non non non non no.... * Crack * '
+  lineText: " H\xE9\xE9 pose moi... Euh je veux dire pose ce truc l\xE0. Non non non
+    non no.... * Crack *"
   speaker: 
   lineclip: {fileID: 8300000, guid: 58563b69e08563b46836d6ee11000951, type: 3}
