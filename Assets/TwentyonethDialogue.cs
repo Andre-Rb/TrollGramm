@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-// ReSharper disable once CheckNamespace
-public class SixteenthDialogue : DialogueTrigger {
+public class TwentyonethDialogue : DialogueTrigger {
 
     // ReSharper disable once UnusedMember.Local
     private void OnTriggerEnter(Collider other)
@@ -9,9 +8,8 @@ public class SixteenthDialogue : DialogueTrigger {
         if (other.gameObject.CompareTag(Tags.Player.ToString()))
         {
             PlayDialogue();
-            gameObject.GetComponent<Collider>().enabled = false;
+            GetComponent<Collider>().enabled = false;
         }
     }
-
 
 }

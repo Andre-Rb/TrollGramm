@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7296a1a9688eee449841b0c2b6b3b12f, type: 3}
-  m_Name: Scene4-17
+  m_Name: Scene4-21
   m_EditorClassIdentifier: 
-  lineText: "Oui. Oui le niveau est en 2D. On \xE9tait restreint niveau budget."
+  lineText: Oh enfin regardez !
   speaker: 
-  lineclip: {fileID: 8300000, guid: 68489ef48f9fb6c44bd053f1d308fdae, type: 3}
+  lineclip: {fileID: 8300000, guid: 96b02cdaef591b444811756a4cab4463, type: 3}

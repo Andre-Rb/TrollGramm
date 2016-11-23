@@ -17,7 +17,7 @@ public class FilterSwitcher : MonoBehaviour
 
     private int redLayerMask;
     private int blueLayerMask;
-    private int neitherLayerMask;
+    //private int neitherLayerMask;
     void Start()
     {
         //Debug.Log("Camera culling mask are : " + PlayerCamera_AutoSelected.cullingMask);
@@ -31,7 +31,7 @@ public class FilterSwitcher : MonoBehaviour
 
         redLayerMask = 1 << redModelCube.layer;
         blueLayerMask = 1 << blueModelCube.layer;
-        neitherLayerMask = redModelCube.layer + redModelCube.layer;
+        //neitherLayerMask = redModelCube.layer + redModelCube.layer;
         //Debug.Log("Neither culling mask are : " + neitherLayerMask);
         //Debug.Log("Neither culling mask are : " + neitherLayerMask);
 

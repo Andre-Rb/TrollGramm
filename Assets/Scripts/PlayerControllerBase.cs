@@ -82,7 +82,7 @@ public abstract class PlayerControllerBase : MonoBehaviour
             Rb.AddForce(transform.up * jump);
 
             Animator.SetTrigger(CharacterAnimatorState.ForwardJump.ToString());
-            Debug.Log("has jumped");
+            //Debug.Log("has jumped");
         }
     }
 
