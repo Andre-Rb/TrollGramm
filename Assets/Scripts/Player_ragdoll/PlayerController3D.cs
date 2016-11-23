@@ -28,7 +28,7 @@ public class PlayerController3D : PlayerControllerBase
                 break;
 
             case "Scene02":
-                Speed = 60000;
+                Speed = 40000;
                 RotationSpeed = 300;
                 JumpHeight = 150000;
                 break;
