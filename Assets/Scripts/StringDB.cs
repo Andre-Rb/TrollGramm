@@ -1,7 +1,8 @@
 ﻿public enum Tags
 {
     Ground,
-    Player
+    Player,
+    Sky
 }
 
 public enum CharacterAnimatorState
