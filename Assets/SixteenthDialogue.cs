@@ -6,7 +6,7 @@ public class SixteenthDialogue : DialogueTrigger {
     private void OnTriggerEnter(Collider other)
     {
         PlayDialogue();
-        other.enabled = false;
+        gameObject.GetComponent<Collider>().enabled = false;
     }
 
 
