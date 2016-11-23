@@ -150,11 +150,15 @@ public class PlayerController3D : PlayerControllerBase
     public void FixedUpdate()
     {
         //CalcForwardVelocity();
-        Move();
-        Rotation();
-        Jump();
+        if (!playerIsDead)
+        {
+            Move();
+            Rotation();
+            ChangeDrag();
+            Jump();
 
-        ChangeDrag();
+        }
+
     }
 
     private void ChangeDrag()

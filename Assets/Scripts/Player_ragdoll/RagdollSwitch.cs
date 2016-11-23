@@ -73,10 +73,16 @@ public class RagdollSwitch : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Kill();
-            spinningRoutine = Spinning(20000f);
+            Debug.Log("killing !");
 
-            StartCoroutine(spinningRoutine);
+            Kill();
+            if (rigibodyToPropulseAtDeath != null)
+            {
+
+                spinningRoutine = Spinning(20000f);
+                StartCoroutine(spinningRoutine);
+            }
+
         }
 
     }
@@ -97,10 +103,11 @@ public class RagdollSwitch : MonoBehaviour
             MakeRBsNotPhysic(false);
             GetComponent<Animator>().enabled = false;
             GetComponent<Collider>().enabled = false;
+            GetComponent<PlayerController3D>().PlayerIsDead = true;
             Destroy(gameObjectRB);
-            GetComponent<Player>().Alive = false;
             Debug.Log("killed the character with kill method");
-            rigibodyToPropulseAtDeath.AddForce(Vector3.up * killingJummpForce);
+            if (rigibodyToPropulseAtDeath != null)
+                rigibodyToPropulseAtDeath.AddForce(Vector3.up * killingJummpForce);
 
 
 
