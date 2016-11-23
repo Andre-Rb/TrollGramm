@@ -23,7 +23,7 @@ public class SkyChecker : MonoBehaviour
             _currenttlyColliding.Remove(other);
             if (_currenttlyColliding.Count == 0)
             {
-                BackgroundScrolling.GenerateANewSkyPlan();
+               // BackgroundScrolling.GenerateANewSkyPlan();
 
             }
         }

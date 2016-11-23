@@ -15,7 +15,7 @@ public class PlayerController2D : PlayerControllerBase
         switch (SceneManager.GetActiveScene().name)
         {
             case "Scene04":
-                Speed = 20000;
+                Speed = 30000;
                 JumpHeight = 150000;
                 dragAirborn = 2;
                 dragOnGround = 5;
