@@ -93,7 +93,7 @@ public class RagdollSwitch : MonoBehaviour
     /// <summary>
     /// Permet de killer avec la touche K
     /// </summary>
-    void Kill(float killingJummpForce = 2000)
+    public void Kill(float killingJummpForce = 2000)
     {
         if (Application.isEditor)
         {
