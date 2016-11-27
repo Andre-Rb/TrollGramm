@@ -33,4 +33,19 @@
 
 > **Builds**
 > > - Windows 64bit corresponding to commit - **LASTEST**
-> >
+
+---
+> **What should I know else ?**
+>  Well, there is a tiny thing you can do that's hidden, there are two key that are kind of a cheat 
+> > - **M** is for skipping to the next level
+> > - **L** is for restarting the level (to implement)
+> 
+> Please use them only if something goes wrong or because the game doesn't have a save system.
+
+---
+
+> **TODO List **
+>  
+ - [Link to the trello](https://trello.com/b/fMTl3ET5/todos)
+
+
