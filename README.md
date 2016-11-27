@@ -25,14 +25,14 @@
 
 ---
 > **Can I play it ?**
-> > *Of course you can ! You can't even checkout out sources, after all you're on a GitHub :)*
+> > *Of course you can ! You can even checkout out sources, after all you're on a GitHub :)*
 > >
 > > Checkout the next section for link of builds :)
 
 ---
 
 > **Builds**
-> > - [Windows 64Bits v1.0](https://drive.google.com/file/d/0B9EgTPMyUdAMUFdDZEFjaUpzVkU/view?usp=sharing) corresponding to commit [acbdc1f](https://github.com/Andre-Rb/TrollGramm/commit/acbdc1fb222c7feb512c4ac2e851d241307ceb0b) - **LASTEST**
+> > - [Windows 64Bits v1.0](https://drive.google.com/open?id=0B9EgTPMyUdAMUFdDZEFjaUpzVkU) corresponding to commit [acbdc1f](https://github.com/Andre-Rb/TrollGramm/commit/acbdc1fb222c7feb512c4ac2e851d241307ceb0b) - **LASTEST**
 
 ---
 > **What should I know else ?**  
