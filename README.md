@@ -3,6 +3,7 @@
 
 > **What's SansTitre(2) ?**
 >> *It's a game created during the [Bordeaux Game Jam #4](https://www.facebook.com/Flat226-1393782450903925/photos/?tab=album&album_id=1818289598453206) ( France ).*
+>> Bear in mind that the theme of this gamejam was **"Break the rules"**, that's why the game is inconsistant in his GD, unfair and confusing ( Great theme for doing a sloppy job, uh ? :D)
 
 ---
 >   **Who created it ?**
