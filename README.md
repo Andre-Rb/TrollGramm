@@ -32,10 +32,10 @@
 ---
 
 > **Builds**
-> > - Windows 64bit corresponding to commit - **LASTEST**
+> > - [Windows 64Bits v1.0](https://drive.google.com/file/d/0B9EgTPMyUdAMUFdDZEFjaUpzVkU/view?usp=sharing) corresponding to commit [acbdc1f](https://github.com/Andre-Rb/TrollGramm/commit/acbdc1fb222c7feb512c4ac2e851d241307ceb0b) - **LASTEST**
 
 ---
-> **What should I know else ?**
+> **What should I know else ?**  
 >  Well, there is a tiny thing you can do that's hidden, there are two key that are kind of a cheat 
 > > - **M** is for skipping to the next level
 > > - **L** is for restarting the level (to implement)
@@ -44,8 +44,8 @@
 
 ---
 
-> **TODO List **
+> **TODO List**
 >  
- - [Link to the trello](https://trello.com/b/fMTl3ET5/todos)
+> - [Link to the trello](https://trello.com/b/fMTl3ET5/todos)
 
 
