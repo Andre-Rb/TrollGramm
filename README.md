@@ -38,12 +38,13 @@
 
 ---
 > **What should I know else ?**  
+> Press "**Space**" to reswpan ( yup "TODO" is on the gameover screen, let's say we wanted at first to to it let and then we just wanted to mess with you)  
+>
 >  Well, there is a tiny thing you can do that's hidden, there are two key that are kind of a cheat 
 > > - **M** is for skipping to the next level
 > > - **L** is for restarting the level (to implement)
 > 
-> Please use them only if something goes wrong or because the game doesn't have a save system.
-> Press "Space" to reswpan ( yup "TODO" is on the gameover screen, let's say we wanted at first to to it let and then we just wanted to mess with you)
+> Please use them only if something goes wrong or because the game doesn't have a save system.  
 
 ---
 
