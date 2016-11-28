@@ -33,7 +33,8 @@
 ---
 
 > **Builds**
-> > - [Windows 64Bits v1.0](https://drive.google.com/open?id=0B9EgTPMyUdAMUFdDZEFjaUpzVkU) corresponding to commit [acbdc1f](https://github.com/Andre-Rb/TrollGramm/commit/acbdc1fb222c7feb512c4ac2e851d241307ceb0b) - **LASTEST**
+> > - [Windows 64Bits v1.1](https://drive.google.com/open?id=0B9EgTPMyUdAMdzh2Z2pVcmEydWc) corresponding to commit [a88bb01](https://github.com/Andre-Rb/TrollGramm/commit/a88bb0168fd92530ce6294658fe792a819eaf1a1) - **LASTEST**
+> > - [Windows 64Bits v1.0](https://drive.google.com/open?id=0B9EgTPMyUdAMUFdDZEFjaUpzVkU) corresponding to commit [acbdc1f](https://github.com/Andre-Rb/TrollGramm/commit/acbdc1fb222c7feb512c4ac2e851d241307ceb0b)
 
 ---
 > **What should I know else ?**  
