@@ -38,7 +38,8 @@
 
 ---
 > **What should I know else ?**  
-> Press "**Space**" to reswpan ( yup "TODO" is on the gameover screen, let's say we wanted at first to to it let and then we just wanted to mess with you)  
+> - The game is designed for being played with an XBOX Controller, except for some keys ( yup, it neeeds a bit of work :p )  
+> - Press "**Space**" to reswpan ( yup "TODO" is on the gameover screen, let's say we wanted at first to to it let and then we just wanted to mess with you)  
 >
 >  Well, there is a tiny thing you can do that's hidden, there are two key that are kind of a cheat 
 > > - **M** is for skipping to the next level
@@ -51,5 +52,3 @@
 > **TODO List**
 >  
 > - [Link to the trello](https://trello.com/b/fMTl3ET5/todos)
-
-
