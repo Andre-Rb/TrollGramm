@@ -9,6 +9,8 @@ public class PlayerKiller : MonoBehaviour
     public Camera cameraGameOver = null;
     public Text text;
 
+	private int nbreAleatoire = 0;
+
     protected string touchePourRespawnMsg;
 
 
@@ -23,7 +25,7 @@ public class PlayerKiller : MonoBehaviour
     protected virtual void SetMessage()
     {
         touchePourRespawnMsg = "\nAppuie sur " + "TODO" + " pour respawn.";
-        text.text = "'Message de mort générique avec accent moqueur'";
+		text.text = MessageGameOver();
         text.text += touchePourRespawnMsg;
 
     }
@@ -49,6 +51,13 @@ public class PlayerKiller : MonoBehaviour
     }
 
 
+	string MessageGameOver()
+	{
+		string text = "";
 
+		text = "Pasteque";
+
+		return text;
+	}
 
 }
