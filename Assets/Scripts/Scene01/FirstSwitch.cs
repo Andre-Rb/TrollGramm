@@ -3,10 +3,16 @@ using System.Collections;
 
 public class FirstSwitch : Switch {
     public SecondDoor Door;
+	private bool action = false;
 
-    void OnTriggerEnter(Collider other)
+	void Update()
+	{
+		action = Input.GetButtonDown ("BlueFilter");
+	}
+
+    void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == Tags.Player.ToString())
+		if (other.gameObject.tag == Tags.Player.ToString() && action)
         {
             Door.OpenDoor();
         }

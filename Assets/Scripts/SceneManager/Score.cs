@@ -7,15 +7,9 @@ public class Score : MonoBehaviour
 
     public FourteenDialogue Dialogue;
 
-	int score = 0;
+    private int score;
 
 
-
-
-    void Start()
-    {
-        //scoreMax = 70;
-    }
 	void OnTriggerEnter(Collider other)
 	{
 		score++;

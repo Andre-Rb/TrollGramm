@@ -743,8 +743,8 @@ GameObject:
   - 33: {fileID: 84573259}
   - 23: {fileID: 84573258}
   - 114: {fileID: 84573257}
-  - 65: {fileID: 84573256}
   - 114: {fileID: 84573260}
+  - 135: {fileID: 84573256}
   m_Layer: 0
   m_Name: Bouton 2
   m_TagString: Untagged
@@ -766,8 +766,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
---- !u!65 &84573256
-BoxCollider:
+--- !u!135 &84573256
+SphereCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -776,7 +776,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 2.72
   m_Center: {x: 0, y: -0.08905753, z: 0.58521605}
 --- !u!114 &84573257
 MonoBehaviour:
@@ -1241,7 +1241,8 @@ Prefab:
       propertyPath: Light
       value: 
       objectReference: {fileID: 1980028652}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 65000011956222584, guid: da774d3e168e83b43bd821f22cdf9591, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: da774d3e168e83b43bd821f22cdf9591, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &185697244 stripped
@@ -1249,6 +1250,23 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013552634040, guid: da774d3e168e83b43bd821f22cdf9591,
     type: 2}
   m_PrefabInternal: {fileID: 185697243}
+--- !u!1 &185697245 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013658137474, guid: da774d3e168e83b43bd821f22cdf9591,
+    type: 2}
+  m_PrefabInternal: {fileID: 185697243}
+--- !u!135 &185697246
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 185697245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.72
+  m_Center: {x: 0, y: -0.08905753, z: 0.58521605}
 --- !u!1 &190650049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2551,7 +2569,8 @@ Prefab:
       propertyPath: Light
       value: 
       objectReference: {fileID: 44998613}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 65000011956222584, guid: da774d3e168e83b43bd821f22cdf9591, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: da774d3e168e83b43bd821f22cdf9591, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &610307990 stripped
@@ -2559,6 +2578,23 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013552634040, guid: da774d3e168e83b43bd821f22cdf9591,
     type: 2}
   m_PrefabInternal: {fileID: 610307989}
+--- !u!1 &610307991 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013658137474, guid: da774d3e168e83b43bd821f22cdf9591,
+    type: 2}
+  m_PrefabInternal: {fileID: 610307989}
+--- !u!135 &610307992
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 610307991}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.72
+  m_Center: {x: 0, y: -0.08905753, z: 0.58521605}
 --- !u!1 &664660312
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,7 +3633,8 @@ Prefab:
       propertyPath: Light
       value: 
       objectReference: {fileID: 2014415346}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 65000011956222584, guid: da774d3e168e83b43bd821f22cdf9591, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: da774d3e168e83b43bd821f22cdf9591, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1246507521 stripped
@@ -3605,6 +3642,23 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013552634040, guid: da774d3e168e83b43bd821f22cdf9591,
     type: 2}
   m_PrefabInternal: {fileID: 1246507520}
+--- !u!1 &1246507522 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013658137474, guid: da774d3e168e83b43bd821f22cdf9591,
+    type: 2}
+  m_PrefabInternal: {fileID: 1246507520}
+--- !u!135 &1246507523
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1246507522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.72
+  m_Center: {x: 0, y: -0.08905753, z: 0.58521605}
 --- !u!1 &1260872729
 GameObject:
   m_ObjectHideFlags: 0
@@ -4142,7 +4196,8 @@ Prefab:
       propertyPath: Light
       value: 
       objectReference: {fileID: 1131051231}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 65000011956222584, guid: da774d3e168e83b43bd821f22cdf9591, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: da774d3e168e83b43bd821f22cdf9591, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1491121990 stripped
@@ -4150,6 +4205,23 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013552634040, guid: da774d3e168e83b43bd821f22cdf9591,
     type: 2}
   m_PrefabInternal: {fileID: 1491121989}
+--- !u!1 &1491121991 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013658137474, guid: da774d3e168e83b43bd821f22cdf9591,
+    type: 2}
+  m_PrefabInternal: {fileID: 1491121989}
+--- !u!135 &1491121992
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1491121991}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.72
+  m_Center: {x: 0, y: -0.08905753, z: 0.58521605}
 --- !u!1 &1497856165
 GameObject:
   m_ObjectHideFlags: 0
@@ -5219,6 +5291,7 @@ GameObject:
   - 33: {fileID: 1746346567}
   - 23: {fileID: 1746346566}
   - 114: {fileID: 1746346569}
+  - 61: {fileID: 1746346570}
   m_Layer: 0
   m_Name: PlaneTroueSuiteLevel2
   m_TagString: Untagged
@@ -5290,6 +5363,20 @@ MonoBehaviour:
   ReswpanPointTransform: {fileID: 2000074129}
   cameraGameOver: {fileID: 558947339}
   text: {fileID: 463694935}
+--- !u!61 &1746346570
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1746346565}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 9.999999, y: 1}
 --- !u!1 &1771393884
 GameObject:
   m_ObjectHideFlags: 0

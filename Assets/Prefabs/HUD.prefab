@@ -23,6 +23,7 @@ GameObject:
   - 114: {fileID: 114000011024103344}
   - 114: {fileID: 114000012636640086}
   - 114: {fileID: 114000010885557042}
+  - 114: {fileID: 114000014170676258}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -1294,6 +1295,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'te parle :'
+--- !u!114 &114000014170676258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010001774490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd32bf83bf08004aa84dcaf06366547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &222000010052427708
 CanvasRenderer:
   m_ObjectHideFlags: 1

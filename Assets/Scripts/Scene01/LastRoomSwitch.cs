@@ -8,12 +8,18 @@ public class LastRoomSwitch : Switch
 
     public bool isFinalActivation;
     private bool _isActivated;
+	private bool action = false;
 
     public bool IsActivated
     {
         get { return _isActivated; }
         set { _isActivated = value; }
     }
+
+	void Update()
+	{
+		action = Input.GetButtonDown ("BlueFilter");
+	} 
 
     void Activate()
     {
@@ -46,9 +52,9 @@ public class LastRoomSwitch : Switch
         Manager.RemoveSwitchToActivatedOnes(this);
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag(Tags.Player.ToString()) && !IsActivated)
+		if (other.gameObject.CompareTag(Tags.Player.ToString()) && !IsActivated && action)
         {
             Activate();
             if (isFinalActivation)
